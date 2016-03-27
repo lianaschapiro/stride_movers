@@ -17,7 +17,7 @@ post '/email' do
       m.to      = 'liana.schapiro@gmail.com'
       m.from    = params[:mail]
       m.subject = 'Email Sent From Stride Movers'
-      m.text    = "Name: #{params[:name]}\r\n\r\nPhone: #{params[:number]}\r\n\r\nBody: #{params[:comment]}"
+      m.text    = "Name: #{params[:name]}\r\n\r\nPhone: #{params[:number]}\r\n\r\nStairs: #{params[:stairs_start]}"
     end
   if client.send(email)
     # flash[:notice]="You've messaged me, I'll get back to you asap!"

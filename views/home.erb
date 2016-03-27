@@ -106,12 +106,74 @@
 		<form action="/email" method="POST">
           <input type="text" name="name" placeholder="Your Name">
           <br>
-          <input type="text" name="mail" placeholder="Your Email">
+          <input type="email" name="mail" placeholder="Your Email">
           <br>
-          <input type="text" name="number" placeholder="Your Phone">
+          <input type="text" name="number" placeholder="Your Phone Number">
           <br>
-          <textarea id="article-input" type="text" rows="9" cols="20" name="comment" placeholder="Your Message"></textarea>
-          <base><br></base>
+          <input type="text" name="number2" placeholder="Secondary Number">
+          <br>
+          <input type="text" name="refer" placeholder="How did you hear about us?">
+          <br>
+
+          <label for="date">Potential moving dates (with times)</label>
+          <br>
+          <input type="datetime-local" name="date1" placeholder="How did you hear about us?">
+          <br>
+          <input type="datetime-local" name="date2" placeholder="How did you hear about us?">
+          <br>
+          <input type="datetime-local" name="date3" placeholder="How did you hear about us?">
+          <br>
+
+          <textarea type="text" name="datedetails" placeholder="Date specifics"></textarea>
+          <br>
+           <input type="text" name="starting" placeholder="Starting address">
+          <br>
+       
+          <label for="stairs_start">What is the staircase/elevator at the starting location?</label>
+          <br>
+          <select name="stairs_start">
+		  	<option value="select" selected>Select One</option>
+		  	<option value="Ground floor">Ground floor</option>
+		  	<option value="1 flight of stairs">1 flight of stairs</option>
+		  	<option value="2 flights of stairs">2 flights of stairs</option>
+		  	<option value="3 flight of stairs">3 flight of stairs</option>
+		  	<option value="4 flights of stairs">4 flights of stairs</option>
+		  	<option value="5 flight of stairs">5 flight of stairs</option>
+		  </select>
+		  <br>
+          <textarea type="text" name="stairdetails" placeholder="Stair specifics"></textarea>
+          <br>
+          COI? y/n
+          <input type="ch" name="COI">
+          <br>
+          <input type="text" name="ending" placeholder="Ending address">
+          <br>
+          
+          stair situation ending
+
+          <input type="text" name="stairdetails_end" placeholder="Stair specifics">
+          <br>
+          
+          COI? y/n
+
+          moving time deadlines y/n
+          <textarea id="article-input" type="text" rows="9" cols="20" name="comment" placeholder="Please explain"></textarea>
+
+          <textarea id="article-input" type="text" rows="9" cols="20" name="furniture" placeholder="List of furniture"></textarea>
+
+
+          <textarea id="article-input" type="text" rows="9" cols="20" name="valuable" placeholder="Particularly valuable items"></textarea>
+
+          <textarea id="article-input" type="text" rows="9" cols="20" name="assemble" placeholder="Things requiring dis-assembly/re-assembly"></textarea>
+        	
+          <input type="number" name="smallbox" placeholder="Number small boxes">
+          <input type="number" name="mediumbox" placeholder="Number medium boxes">
+          <input type="number" name="largebox" placeholder="Number large boxes">
+          <input type="number" name="wardrobebox" placeholder="Number wardrobe boxes">
+        	
+        	
+	      <textarea id="article-input" type="text" rows="9" cols="20" name="other_items" placeholder="Other items"></textarea>
+	      <textarea id="article-input" type="text" rows="9" cols="20" name="other" placeholder="Other information"></textarea>
           <input type="submit">
         </form>
 
