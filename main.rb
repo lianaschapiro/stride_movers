@@ -14,9 +14,9 @@ post '/email' do
   # if ValidateEmail.valid?(params[:mail])
     client = SendGrid::Client.new(api_key: ENV['SENDGRID_API_KEY'])
     email = SendGrid::Mail.new do |m|
-      m.to      = 'liana.schapiro@gmail.com'
+      m.to      = 'stridemovers@gmail.com'
       m.from    = params[:mail]
-      m.subject = 'Email Sent From Stride Movers'
+      m.subject = 'Email Sent From Stride Movers Website'
       m.html    = "<style='font-size:16px'>
       				<b> Name: </b> #{params[:name]}<br><br>
       				<b> Email: </b> #{params[:mail]}<br><br>

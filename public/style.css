@@ -184,8 +184,13 @@ img {
 }
 
 #quote {
-	height: 40vh;
+	min-height: 40vh;
 	padding: 70px 0 40px;
+	background-color: white;
+	/*overflow: auto;*/
+}
+
+form {
 	background-color: white;
 }
 
@@ -201,7 +206,7 @@ img {
 }
 
 #contact_pic{
-	min-height: 60vh;
+	min-height: 65vh;
 	background-image: url("images/contact.jpg");
 	background-size: cover;
 }
@@ -209,7 +214,6 @@ img {
 @media all and (max-width: 668px) {
 	#headline {
 			font-size: 16px;
-			/*margin-top: 15px;*/
 			margin-bottom: 0;
 		}
 	.individual_testimonial{
