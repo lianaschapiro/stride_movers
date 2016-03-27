@@ -18,32 +18,32 @@ post '/email' do
       m.from    = params[:mail]
       m.subject = 'Email Sent From Stride Movers'
       m.html    = "<style='font-size:16px'>
-      				Name: #{params[:name]}<br>
-      				Email: #{params[:mail]}<br>
-      				Phone: #{params[:phone]}<br>
-      				Secondary Phone: #{params[:phone2]}<br>
-      				How did you hear about us: #{params[:refer]}<br>
-      				Date 1: #{params[:date1]}<br>
-      				Date 2: #{params[:date2]}<br>
-      				Date 3: #{params[:date3]}<br>
-      				Date details: #{params[:datedetails]}<br>
-      				Starting address: #{params[:starting]}<br>
-      				Stairs @ start: #{params[:stairs_start]}<br>
-      				Details @ start: #{params[:stairdetails_start]}
-      				COI needed? #{params[:certificate]}
-      				Ending address: #{params[:ending]}
-      				Stairs @ end: #{params[:stairs_end]}
-					Details @ end: #{params[:stairdetails_end]}    				
-      				Deadlines: #{params[:deadlines]}
-      				Furniture list: #{params[:furniture]}
-      				Valuables: #{params[:valuable]}
-      				Assembly? #{params[:assemble]}
-      				Small boxes: #{params[:smallbox]}
-      				Medium boxes: #{params[:mediumbox]}
-      				Large boxes: #{params[:largebox]}
-      				Wardrobe boxes: #{params[:wardrobebox]}
-      				Other items: #{params[:other_items]}
-      				Other info: #{params[:other]}
+      				<b> Name: </b> #{params[:name]}<br>
+      				<b> Email: </b> #{params[:mail]}<br>
+      				<b> Phone: </b> #{params[:phone]}<br>
+      				<b> Secondary Phone: </b> #{params[:phone2]}<br>
+      				<b> How did you hear about us: </b> #{params[:refer]}<br>
+      				<b> Date 1: </b> #{params[:date1]}<br>
+      				<b> Date 2: </b> #{params[:date2]}<br>
+      				<b> Date 3: </b> #{params[:date3]}<br>
+      				<b> Date details: </b> #{params[:datedetails]}<br>
+      				<b> Starting address: </b> #{params[:starting]}<br>
+      				<b> Stairs @ start: </b> #{params[:stairs_start]}<br>
+      				<b> Details @ start: </b> #{params[:stairdetails_start]}
+      				<b> COI needed? </b> #{params[:certificate]}
+      				<b> Ending address: </b> #{params[:ending]}
+      				<b> Stairs @ end: </b> #{params[:stairs_end]}
+					<b> Details @ end: </b> #{params[:stairdetails_end]}    				
+      				<b> Deadlines: </b> #{params[:deadlines]}
+      				<b> Furniture list: </b> #{params[:furniture]}
+      				<b> Valuables: </b> #{params[:valuable]}
+      				<b> Assembly? </b> #{params[:assemble]}
+      				<b> Small boxes: </b> #{params[:smallbox]}
+      				<b> Medium boxes: </b> #{params[:mediumbox]}
+      				<b> Large boxes: </b> #{params[:largebox]}
+      				<b> Wardrobe boxes: </b> #{params[:wardrobebox]}
+      				<b> Other items: </b> #{params[:other_items]}
+      				<b> Other info: </b> #{params[:other]}
       				</style>"
     end
   if client.send(email)
