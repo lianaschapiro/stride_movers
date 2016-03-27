@@ -18,13 +18,13 @@ post '/email' do
       m.from    = params[:mail]
       m.subject = 'Email Sent From Stride Movers'
       m.html    = "<style='font-size:16px'>
-      				Name: #{params[:name]}\r\n\r\n
-      				Email: #{params[:mail]}\r\n\r\n
-      				Phone: #{params[:phone]}\r\n\r\n
-      				Secondary Phone: #{params[:phone2]}\r\n\r\n
-      				How did you hear about us: #{params[:refer]}\r\n\r\n
-      				Date 1: #{params[:date1]}\r\n\r\n
-      				Date 2: #{params[:date2]}\r\n\r\n
+      				Name: #{params[:name]}
+      				Email: #{params[:mail]}
+      				Phone: #{params[:phone]}
+      				Secondary Phone: #{params[:phone2]}
+      				How did you hear about us: #{params[:refer]}
+      				Date 1: #{params[:date1]}
+      				Date 2: #{params[:date2]}
       				Date 3: #{params[:date3]}\r\n\r\n
       				Date details: #{params[:datedetails]}\r\n\r\n
       				Starting address: #{params[:starting]}\r\n\r\n
