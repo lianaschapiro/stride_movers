@@ -189,6 +189,17 @@ img {
 	background-color: white;
 }
 
+#quote input, #quote select {
+	width: 200px;
+	margin-bottom: 20px;
+}
+
+#quote textarea {
+	width: 350px;
+	height: 50px;
+	margin-bottom: 20px;
+}
+
 #contact_pic{
 	min-height: 60vh;
 	background-image: url("images/contact.jpg");
