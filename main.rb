@@ -18,32 +18,32 @@ post '/email' do
       m.from    = params[:mail]
       m.subject = 'Email Sent From Stride Movers'
       m.html    = "<style='font-size:16px'>
-      				Name: #{params[:name]}
-      				Email: #{params[:mail]}
-      				Phone: #{params[:phone]}
-      				Secondary Phone: #{params[:phone2]}
-      				How did you hear about us: #{params[:refer]}
-      				Date 1: #{params[:date1]}
-      				Date 2: #{params[:date2]}
-      				Date 3: #{params[:date3]}\r\n\r\n
-      				Date details: #{params[:datedetails]}\r\n\r\n
-      				Starting address: #{params[:starting]}\r\n\r\n
-      				Stairs @ start: #{params[:stairs_start]}\r\n\r\n
-      				Details @ start: #{params[:stairdetails_start]}\r\n\r\n
-      				COI needed? #{params[:certificate]}\r\n\r\n
-      				Ending address: #{params[:ending]}\r\n\r\n
-      				Stairs @ end: #{params[:stairs_end]}\r\n\r\n
-					Details @ end: #{params[:stairdetails_end]}\r\n\r\n     				
-      				Deadlines: #{params[:deadlines]}\r\n\r\n
-      				Furniture list: #{params[:furniture]}\r\n\r\n
-      				Valuables: #{params[:valuable]}\r\n\r\n
-      				Assembly? #{params[:assemble]}\r\n\r\n
-      				Small boxes: #{params[:smallbox]}\r\n\r\n
-      				Medium boxes: #{params[:mediumbox]}\r\n\r\n
-      				Large boxes: #{params[:largebox]}\r\n\r\n
-      				Wardrobe boxes: #{params[:wardrobebox]}\r\n\r\n
-      				Other items: #{params[:other_items]}\r\n\r\n
-      				Other info: #{params[:other]}\r\n\r\n
+      				Name: #{params[:name]}<br>
+      				Email: #{params[:mail]}<br>
+      				Phone: #{params[:phone]}<br>
+      				Secondary Phone: #{params[:phone2]}<br>
+      				How did you hear about us: #{params[:refer]}<br>
+      				Date 1: #{params[:date1]}<br>
+      				Date 2: #{params[:date2]}<br>
+      				Date 3: #{params[:date3]}<br>
+      				Date details: #{params[:datedetails]}<br>
+      				Starting address: #{params[:starting]}<br>
+      				Stairs @ start: #{params[:stairs_start]}<br>
+      				Details @ start: #{params[:stairdetails_start]}
+      				COI needed? #{params[:certificate]}
+      				Ending address: #{params[:ending]}
+      				Stairs @ end: #{params[:stairs_end]}
+					Details @ end: #{params[:stairdetails_end]}    				
+      				Deadlines: #{params[:deadlines]}
+      				Furniture list: #{params[:furniture]}
+      				Valuables: #{params[:valuable]}
+      				Assembly? #{params[:assemble]}
+      				Small boxes: #{params[:smallbox]}
+      				Medium boxes: #{params[:mediumbox]}
+      				Large boxes: #{params[:largebox]}
+      				Wardrobe boxes: #{params[:wardrobebox]}
+      				Other items: #{params[:other_items]}
+      				Other info: #{params[:other]}
       				</style>"
     end
   if client.send(email)
