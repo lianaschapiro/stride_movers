@@ -20,10 +20,10 @@ post '/email' do
       m.text    = "Name: #{params[:name]}\r\n\r\nPhone: #{params[:number]}\r\n\r\nBody: #{params[:comment]}"
     end
   if client.send(email)
-    flash[:notice]="You've messaged me, I'll get back to you asap!"
+    # flash[:notice]="You've messaged me, I'll get back to you asap!"
     redirect '/'
   else
-    flash[:notice]="Please use a properly formatted email address!"
+    # flash[:notice]="Please use a properly formatted email address!"
     redirect '/#quote'
   end
 end
