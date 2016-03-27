@@ -12,7 +12,7 @@ end
 
 post '/email' do 
   # if ValidateEmail.valid?(params[:mail])
-    client = SendGrid::Client.new(api_key: 'SENDGRID_PASSWORD')
+    client = SendGrid::Client.new(api_key: ENV['SENDGRID_API_KEY'])
     email = SendGrid::Mail.new do |m|
       m.to      = 'liana.schapiro@gmail.com'
       m.from    = params[:mail]
