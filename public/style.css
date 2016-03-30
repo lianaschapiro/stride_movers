@@ -90,6 +90,11 @@ img {
 	margin: 0 auto;
 }
 
+.icons {
+	height: 115px;
+	width: 115px;
+}
+
 #movingtips {
 	min-height: 100vh;
 	padding: 70px 0 0;
