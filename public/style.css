@@ -13,7 +13,7 @@ nav {
 	color: #e0e0e0;
 	position:fixed;
 	top: 0;
-	width: 100%;
+	width: 100vw;
 	z-index: 10;
 }
  
@@ -205,9 +205,18 @@ form {
 }
 
 #quote textarea {
-	width: 350px;
+	width: 310px;
 	height: 50px;
 	margin-bottom: 20px;
+}
+
+#contact {
+	padding: 70px 0 0;
+}
+
+.social_icons {
+	height: 60px;
+	width: 80px;
 }
 
 #contact_pic{
@@ -227,6 +236,7 @@ form {
 		}
 	nav a {
 		font-size: 12px;
+		margin: 15px 0px 15px;
 	}
 
 	#movingtips iframe {
@@ -235,6 +245,10 @@ form {
 }
 }
 @media all and (max-width: 520px) {
+	#headline {
+		display: none;
+	}
+
 	#about, #movingtips {
 		min-height: none;
 		background-image: none;
@@ -242,9 +256,9 @@ form {
 
 	nav a {
 		font-size: 10px;
-		margin-right: 0px;
-		margin-top: 0;
-		padding-right: 5px;
+		padding-right: 2px;
+		padding-left: 2px;
+		/*padding: 8px 16px;*/
 	}
 
 	#quote h1 {
