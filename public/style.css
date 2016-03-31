@@ -8,6 +8,10 @@ body {
 	background-color: #e0e0e0;
 }
 
+a {
+	text-decoration: none;
+}
+
 nav {
 	background-color: rgba(0,0,0,.9);
 	color: #e0e0e0;
@@ -21,8 +25,6 @@ nav {
  	display: inline-block;
  	font-size: 25px;
  	font-weight: bold;
-	/*padding: 8px 16px;*/
-    /*margin: 9px 10px 10px 0px;*/
 }
 
 nav ul {
@@ -33,7 +35,6 @@ nav ul {
 nav a {
 	display: inline-block;
     color: white;
-    text-decoration: none;
     padding: 8px 16px;
     margin: 15px 10px 15px 0px;
 }
