@@ -61,14 +61,18 @@ nav li:hover {
 	position: fixed;
 	top: 70px;
 	background-color: red;
-	width: 225px;
-	height: 80px;
+	width: 240px;
+	height: 70px;
 	border-radius: 0px 0px 10px 0px;
 }
 
 #get_quote a {
 	color: white;
-	font-size: 18px;
+	font-size: 20px;
+}
+
+#get_quote h3 {
+	margin-top: 8px;
 }
 
 h1, h2{
@@ -248,23 +252,24 @@ form {
 #footer {
 	background-color: black;
 	height: 125px;
-
 	color: white;
+	font-size: 17px;
 }
 
 .col1 {
-	width: 35%;
+	width: 22%;
 	float: left;
+	text-align: left;
 }
 
 .col2 {
-	width: 30%;
+	width: 48%;
 	display: inline-block;
 	padding-top: 20px;
 }
 
 .col3 {
-	width: 35%;
+	width: 30%;
 	float: right;
 }
 @media all and (max-width: 1200px) {
