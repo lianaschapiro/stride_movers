@@ -62,13 +62,13 @@ nav li:hover {
 	top: 70px;
 	background-color: red;
 	width: 225px;
-	height: 90px;
+	height: 80px;
 	border-radius: 0px 0px 10px 0px;
 }
 
 #get_quote a {
 	color: white;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 h1, h2{
