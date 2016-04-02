@@ -273,11 +273,9 @@ form {
 	float: right;
 }
 @media all and (max-width: 1200px) {
-	#phone_header {
-		margin-left: 5%;
+	.col1, .col2, .col3 {
+		width: 33%;
 	}
-}
-@media all and (max-width: 1200px) {
 	#phone_header {
 		margin-left: 3%;
 	}
@@ -331,8 +329,13 @@ form {
 		font-size: 14px;
 	}
 }
+@media all and (max-width: 667px) {
+	.col3 {
+		margin-top: 20px;
+	}
+}
 
-@media all and (max-width: 520px) {
+@media all and (max-width: 570px) {
 	#phone_header {
 		display: none;
 	}
