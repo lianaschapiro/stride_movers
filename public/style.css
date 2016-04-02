@@ -19,12 +19,7 @@ nav {
 	top: 0;
 	width: 100vw;
 	z-index: 10;
-}
- 
-#headline {
- 	display: inline-block;
- 	font-size: 25px;
- 	font-weight: bold;
+	height: 70px;
 }
 
 nav ul {
@@ -45,7 +40,7 @@ nav li {
 }
 
 nav li:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: transform 0.2s ease-in;
 }
 
@@ -62,6 +57,19 @@ nav li:hover {
 	margin: 0px auto;
 }
 
+#get_quote {
+	position: fixed;
+	top: 70px;
+	background-color: red;
+	width: 225px;
+	height: 90px;
+	border-radius: 0px 0px 10px 0px;
+}
+
+#get_quote a {
+	color: white;
+	font-size: 20px;
+}
 
 h1, h2{
 	margin: 30px 30px 10px;
@@ -78,6 +86,17 @@ li {
 img {
 	width: 30%;
 	margin: 25px 1% 0px;
+}
+
+#headline {
+ 	display: inline-block;
+ 	font-size: 25px;
+ 	font-weight: bold;
+}
+
+#phone_header {
+	text-align: center;
+	margin-left: 15%;
 }
 
 #about {
@@ -221,35 +240,97 @@ form {
 }
 
 #contact_pic{
-	min-height: 65vh;
+	height: 65vh;
 	background-image: url("images/contact.jpg");
 	background-size: cover;
 }
 
-@media all and (max-width: 668px) {
+#footer {
+	background-color: black;
+	height: 125px;
+
+	color: white;
+}
+
+.col1 {
+	width: 35%;
+	float: left;
+}
+
+.col2 {
+	width: 30%;
+	display: inline-block;
+	padding-top: 20px;
+}
+
+.col3 {
+	width: 35%;
+	float: right;
+}
+@media all and (max-width: 1200px) {
+	#phone_header {
+		margin-left: 5%;
+	}
+}
+@media all and (max-width: 1200px) {
+	#phone_header {
+		margin-left: 3%;
+	}
 	#headline {
-			font-size: 16px;
-			margin-bottom: 0;
-		}
+		display: none;
+	}
+	#phone_header {
+		margin-left: 3%;
+		margin-top: 20px;
+	}
+	nav a {
+		font-size: 12px;
+		margin: 20px 0px 15px;
+		padding: 8px;
+	}
+	.col3 {
+		margin-top: 20px;
+	}
+	.social_icons {
+		height: 30px;
+		width: 40px;
+	}	
+	#about, #testimonials, #quote, #movingtips, #fleet {
+		padding-top: 100px;
+	}
+	
 	.individual_testimonial{
 			width: 90%;
 			margin: 4% 5% 2%;
 		}
-	nav a {
-		font-size: 12px;
-		margin: 15px 0px 15px;
-	}
-
+	
 	#movingtips iframe {
 	width: 90%;
 	margin: 15px 5%;
+	}	
+	#get_quote {
+		width: 100%;
+		height: auto;
+		border-radius: 0;
+	}
+	#get_quote a{
+		font-size: 16px;
+	}
+	#contact {
+		padding-top: 0;
+	}
+	#contact_pic {
+		height: 42vh;
+	}
+	#footer p{
+		font-size: 14px;
+	}
 }
-}
+
 @media all and (max-width: 520px) {
-	#headline {
+	#phone_header {
 		display: none;
 	}
-
 	#about, #movingtips {
 		min-height: none;
 		background-image: none;
@@ -264,5 +345,14 @@ form {
 
 	#quote h1 {
 		font-size: 18px;
+	}
+	#contact_pic {
+		height: 65vh;
+	}
+	#footer p{
+		font-size: 9px;
+	}
+	.col3 {
+		margin-top: 0px;
 	}
 }
