@@ -108,7 +108,7 @@ img {
 	background-image: url("images/7.jpg");
 	background-size: cover;
 	background-attachment: fixed;
-	padding: 90px 0 0;
+	padding: 90px 0 20px;
 }
 
 #about_content {
@@ -121,7 +121,7 @@ img {
 }
 
 #about p {
-	font-size: 18px;
+	font-size: 17px;
 	margin-top: 5px;
 	/*font-weight: bold;*/
 }
