@@ -105,13 +105,25 @@ img {
 
 #about {
 	min-height: 100vh;
-	background-color: white;
-	padding: 70px 0 0;
+	background-image: url("images/7.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 90px 0 0;
 }
 
 #about_content {
-	width: 70%;
+	width: 60%;
+	padding: 5px 0 10px;
 	margin: 0 auto;
+	background-color: rgba(255,255,255,0.9);
+	border-radius: 20px;
+	box-shadow: 14px 22px 35px 1px rgba(0,0,0,0.66);
+}
+
+#about p {
+	font-size: 18px;
+	margin-top: 5px;
+	/*font-weight: bold;*/
 }
 
 .icons {
