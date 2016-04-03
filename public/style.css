@@ -313,7 +313,14 @@ form {
 	#about, #testimonials, #quote, #movingtips, #fleet {
 		padding-top: 100px;
 	}
-	
+	#about {
+		background-image: none;
+		background-color: rgba(255,255,255,0.9);
+	}
+	#about_content {
+	width: 100%;
+	border-radius: 0px;
+	}
 	.individual_testimonial{
 			width: 90%;
 			margin: 4% 5% 2%;
