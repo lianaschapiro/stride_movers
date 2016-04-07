@@ -107,8 +107,6 @@ img {
 	min-height: 100vh;
 	background-image: url("images/7.jpg");
 	background-size: cover;
-	/*background-attachment: fixed;*/
-	/*padding: 90px 0 20px;*/
 }
 
 #about_content {
@@ -117,14 +115,12 @@ img {
 	padding: 5px 0 10px;
 	margin: 0 auto;
 	background-color: rgba(255,255,255,0.75);
-	/*border-radius: 20px;*/
 	box-shadow: 14px 22px 35px 1px rgba(0,0,0,0.66);
 }
 
 #about p {
 	font-size: 17px;
 	margin-top: 5px;
-	/*font-weight: bold;*/
 }
 
 .icons {
