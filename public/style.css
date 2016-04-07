@@ -319,6 +319,9 @@ form {
 	width: 100%;
 	border-radius: 0px;
 	}
+	#about p {
+		padding: 0
+	}
 	.individual_testimonial{
 			width: 90%;
 			margin: 4% 5% 2%;
