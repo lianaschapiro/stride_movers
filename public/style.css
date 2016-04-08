@@ -376,9 +376,14 @@ form {
 	margin: 15px 5%;
 	}	
 	#get_quote {
-		width: 100%;
+		width: 100vw;
 		height: auto;
 		border-radius: 0;
+		padding: 8px 0px 15px 0px;
+	}
+	#get_quote h3 {
+		margin: 0;
+		display: inline-block;
 	}
 	#get_quote a{
 		font-size: 16px;
