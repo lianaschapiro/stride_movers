@@ -229,6 +229,50 @@ img {
 	/*overflow: auto;*/
 }
 
+#quote button {
+	background-color: red;
+	color: white;
+	padding: 5px;
+	font-weight: bold;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+#rates_outer_modal {
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0, 0.9);
+    z-index: 999997;
+    display: none;
+}
+
+#rates_modal {
+    	width: 70%;
+    	height: 85%;
+    	background-color: #f8f8f8;
+    	box-shadow: 0 0 15px #9e9e9e;
+    	border: #cecece solid 1px;
+    	margin: auto;
+    	margin-top: 3%;
+    	overflow: auto;
+        z-index: 999999;
+}
+
+#rates_modal h2 {
+	font-weight: normal;
+	margin-top: 5%;
+}
+
+#close_rates_modal {
+	float: right;
+	width: 3%;
+	font-weight: bold;
+	color: black;
+	font-size: 20px;
+}
+
 form {
 	background-color: white;
 }
@@ -338,6 +382,9 @@ form {
 	}
 	#get_quote a{
 		font-size: 16px;
+	}
+	#rates_modal h2 {
+		font-size:16px;
 	}
 	#contact {
 		padding-top: 0;

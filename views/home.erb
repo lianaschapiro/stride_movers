@@ -114,141 +114,148 @@
 	</div>
 	<div id="quote">
 		<h1>Need a quote?<br>Fill out this form and we'll get back to you within 24 hours</h1>
+			<h3>[Click <button id="rates" onclick="openRatesModal()">HERE</button> to see our general rates]</h3>
 
-		<form action="/email" method="POST">
-		  <label for="name">Name*</label>
-		  	<br>
-          <input type="text" name="name">
-          	<br>
-          <label for="email">Email*</label>
-          	<br>
-          <input type="email" name="mail">
-         	 <br>
-          <label for="phone">Phone*</label>
-          	<br>
-          <input type="text" name="phone">
-          	<br>
-          <label for="phone2">Secondary phone</label>
-          	<br>
-          <input type="text" name="phone2">
-          	<br>
-          <label for="refer">How did you hear about us?</label>
-          	<br>
-          <input type="text" name="refer">
-          	<br>
+			<div id="rates_outer_modal" onclick="closeRatesModal()">
+				<div id="rates_modal">
+					<a href=""><p id="close_rates_modal">X</p></a>	
+						<h1 class="report_title">General Rates</h1>
+							<h2>1 man and a van: <b>$75/hr</b> (2 hour minimum)</h2>
+							<h2>2 men and a van: <b>$100/hr<b> (2 hour minimum)</h2>
+							<h2>2 men and a 20ft truck: <b>$125/hr</b> (3 hour minimum)</h2>
+							<h2>3 Men and a 20ft truck: <b>$150/hr</b> (3 hour minimum)</h2>
+							<h2>2 Men and a 26ft truck: <b>$250/hr</b> (4 hour minimum)</h2>
+							<h2>3 men and a 26ft truck: <b>$350/hr</b> (4 hour minimum)</h2>
+				</div>
+			</div>
+	
 
-          <label for="date">Potential moving dates (with times)</label>
-          	<br>
-          <input type="datetime-local" name="date1">
-          	<br>
-          <input type="datetime-local" name="date2">
-          	<br>
-          <input type="datetime-local" name="date3">
-          	<br>
-
-          <label for="datedetails">Specifics regarding dates and times</label>
-          	<br>
-
-          <textarea type="text" name="datedetails"></textarea>
-          	<br>
-          <label for="starting">Starting Address*</label>
-          	<br>
-          <textarea type="text" name="starting"></textarea>
-          	<br>
-       
-          <label for="stairs_start">What is the staircase/elevator situation at the starting location?</label>
-         	<br>
-          <select name="stairs_start">
-		  	<option value=" " selected>Select One</option>
-		  	<option value="Ground floor">Ground floor</option>
-		  	<option value="Elevator">Elevator</option>
-		  	<option value="1 flight of stairs">1 flight of stairs</option>
-		  	<option value="2 flights of stairs">2 flights of stairs</option>
-		  	<option value="3 flights of stairs">3 flights of stairs</option>
-		  	<option value="4 flights of stairs">4 flights of stairs</option>
-		  	<option value="5 flights of stairs">5 flights of stairs</option>
-		  </select>
-		  	<br>
-		  <label for="stairdetails_start">Details about the staircase/elevator situation</label>
-         	<br>
-          <textarea type="text" name="stairdetails_start"></textarea>
-          	<br>
-          <label for="COI">Does the building require Certificate of Insurance</label>
-          	<br>
-          <select name="certificate">
-          	<option value=" " selected>Select One</option>
-		  	<option value="Yes">Yes</option>
-		  	<option value="No">No</option>
-          </select>
-          	<br>
-          <label for="ending">Ending Address</label>
-          	<br>
-          <textarea type="text" name="ending"></textarea>
-          	<br>
-          
-          <label for="stairs_end">What is the staircase/elevator situation at the ending location?</label>
-         	<br>
-          <select name="stairs_end">
-		  	<option value=" " selected>Select one</option>
-		  	<option value="Ground floor">Ground floor</option>
-		  	<option value="Elevator">Elevator</option>
-		  	<option value="1 flight of stairs">1 flight of stairs</option>
-		  	<option value="2 flights of stairs">2 flights of stairs</option>
-		  	<option value="3 flights of stairs">3 flights of stairs</option>
-		  	<option value="4 flights of stairs">4 flights of stairs</option>
-		  	<option value="5 flights of stairs">5 flights of stairs</option>
-		  </select>
-		  	<br>
-		  <label for="stairdetails_send">Details about the staircase/elevator situation</label>
-         	<br>
-          <textarea type="text" name="stairdetails_end"></textarea>
-          	<br>
-
-          <label for="deadlines">Describe any moving deadlines</label>
-         	<br>
-          <textarea type="text" name="deadlines"></textarea>
- 		  	<br>
- 		  <label for="furniture">List all furniture (estimate sizes)</label>
-         	<br>
-          <textarea type="text" name="furniture"></textarea>
-          	<br>
-
-          <label for="valuable">List valuable items</label>
-         	<br>
-          <textarea type="text" name="valuable"></textarea>
-          	<br>
-          <label for="assemble">List things that may require dis-assembly/re-assembly</label>
-         	<br>
-          <textarea id="article-input" type="text" name="assemble"></textarea>
-          	<br>
-
-          <label for="smallbox">Number of small boxes</label>
-          	<br>
-          <input type="number" name="smallbox">
-          	<br>
-          <label for="mediumbox">Number of medium boxes</label>
-          	<br>
-          <input type="number" name="mediumbox">
-          	<br>
-          <label for="largebox">Number of large boxes</label>
-          	<br>
-          <input type="number" name="largebox">
-          	<br>
-          <label for="wardrobebox">Number of wardrobe boxes</label>
-          	<br>
-          <input type="number" name="wardrobebox">
-          	<br>
-        	
-          <label for="other_items">Other items</label>
-          	<br>
-	      <textarea id="article-input" type="text" name="other_items"></textarea>
-	      	<br>
-	      <label for="other">Other information</label>
-          	<br>
-	      <textarea id="article-input" type="text" name="other"></textarea>
-	      	<br>
-          <input type="submit">
-        </form>
+			<form action="/email" method="POST">
+			  <label for="name">Name*</label>
+			  	<br>
+	          <input type="text" name="name">
+	          	<br>
+	          <label for="email">Email*</label>
+	          	<br>
+	          <input type="email" name="mail">
+	         	 <br>
+	          <label for="phone">Phone*</label>
+	          	<br>
+	          <input type="text" name="phone">
+	          	<br>
+	          <label for="phone2">Secondary phone</label>
+	          	<br>
+	          <input type="text" name="phone2">
+	          	<br>
+	          <label for="refer">How did you hear about us?</label>
+	          	<br>
+	          <input type="text" name="refer">
+	          	<br>
+	          <label for="date">Potential moving dates (with times)</label>
+	          	<br>
+	          <input type="datetime-local" name="date1">
+	          	<br>
+	          <input type="datetime-local" name="date2">
+	          	<br>
+	          <input type="datetime-local" name="date3">
+	          	<br>
+	          <label for="datedetails">Specifics regarding dates and times</label>
+	          	<br>
+	          <textarea type="text" name="datedetails"></textarea>
+	          	<br>
+	          <label for="starting">Starting Address*</label>
+	          	<br>
+	          <textarea type="text" name="starting"></textarea>
+	          	<br>	       
+	          <label for="stairs_start">What is the staircase/elevator situation at the starting location?</label>
+	         	<br>
+	          <select name="stairs_start">
+			  	<option value=" " selected>Select One</option>
+			  	<option value="Ground floor">Ground floor</option>
+			  	<option value="Elevator">Elevator</option>
+			  	<option value="1 flight of stairs">1 flight of stairs</option>
+			  	<option value="2 flights of stairs">2 flights of stairs</option>
+			  	<option value="3 flights of stairs">3 flights of stairs</option>
+			  	<option value="4 flights of stairs">4 flights of stairs</option>
+			  	<option value="5 flights of stairs">5 flights of stairs</option>
+			  </select>
+			  	<br>
+			  <label for="stairdetails_start">Details about the staircase/elevator situation</label>
+	         	<br>
+	          <textarea type="text" name="stairdetails_start"></textarea>
+	          	<br>
+	          <label for="COI">Does the building require Certificate of Insurance</label>
+	          	<br>
+	          <select name="certificate">
+	          	<option value=" " selected>Select One</option>
+			  	<option value="Yes">Yes</option>
+			  	<option value="No">No</option>
+	          </select>
+	          	<br>
+	          <label for="ending">Ending Address</label>
+	          	<br>
+	          <textarea type="text" name="ending"></textarea>
+	          	<br>
+	          
+	          <label for="stairs_end">What is the staircase/elevator situation at the ending location?</label>
+	         	<br>
+	          <select name="stairs_end">
+			  	<option value=" " selected>Select one</option>
+			  	<option value="Ground floor">Ground floor</option>
+			  	<option value="Elevator">Elevator</option>
+			  	<option value="1 flight of stairs">1 flight of stairs</option>
+			  	<option value="2 flights of stairs">2 flights of stairs</option>
+			  	<option value="3 flights of stairs">3 flights of stairs</option>
+			  	<option value="4 flights of stairs">4 flights of stairs</option>
+			  	<option value="5 flights of stairs">5 flights of stairs</option>
+			  </select>
+			  	<br>
+			  <label for="stairdetails_send">Details about the staircase/elevator situation</label>
+	         	<br>
+	          <textarea type="text" name="stairdetails_end"></textarea>
+	          	<br>
+	          <label for="deadlines">Describe any moving deadlines</label>
+	         	<br>
+	          <textarea type="text" name="deadlines"></textarea>
+	 		  	<br>
+	 		  <label for="furniture">List all furniture (estimate sizes)</label>
+	         	<br>
+	          <textarea type="text" name="furniture"></textarea>
+	          	<br>
+	          <label for="valuable">List valuable items</label>
+	         	<br>
+	          <textarea type="text" name="valuable"></textarea>
+	          	<br>
+	          <label for="assemble">List things that may require dis-assembly/re-assembly</label>
+	         	<br>
+	          <textarea id="article-input" type="text" name="assemble"></textarea>
+	          	<br>
+	          <label for="smallbox">Number of small boxes</label>
+	          	<br>
+	          <input type="number" name="smallbox">
+	          	<br>
+	          <label for="mediumbox">Number of medium boxes</label>
+	          	<br>
+	          <input type="number" name="mediumbox">
+	          	<br>
+	          <label for="largebox">Number of large boxes</label>
+	          	<br>
+	          <input type="number" name="largebox">
+	          	<br>
+	          <label for="wardrobebox">Number of wardrobe boxes</label>
+	          	<br>
+	          <input type="number" name="wardrobebox">
+	          	<br>
+	          <label for="other_items">Other items</label>
+	          	<br>
+		      <textarea id="article-input" type="text" name="other_items"></textarea>
+		      	<br>
+		      <label for="other">Other information</label>
+	          	<br>
+		      <textarea id="article-input" type="text" name="other"></textarea>
+		      	<br>
+	          <input type="submit">
+	        </form>
         <h4>USDOT NUMBER: 2872099</h4>
 	</div>
 	<div id="contact">
