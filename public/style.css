@@ -116,6 +116,7 @@ img {
 	margin: 0 auto;
 	background-color: rgba(255,255,255,0.85);
 	box-shadow: 14px 22px 35px 1px rgba(0,0,0,0.66);
+	overflow: auto;
 }
 
 #about p {
