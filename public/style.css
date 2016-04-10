@@ -13,7 +13,7 @@ a {
 }
 
 nav {
-	background-color: rgba(0,0,0,.9);
+	background-color: black;
 	color: #e0e0e0;
 	position:fixed;
 	top: 0;
@@ -34,7 +34,7 @@ nav a {
     margin: 15px 10px 15px 0px;
 }
 
-nav li {
+nav li, .dropbtn {
     display: inline-block;
     color: white;
 }
@@ -44,6 +44,28 @@ nav li:hover {
     transition: transform 0.2s ease-in;
 }
 
+.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+	background-color: black;
+    min-width: 160px;
+    margin-left: -50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: white;
+    padding: 8px 16px;
+    margin: 8px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 #big_image_background {
 	background-image: url("images/truck.jpg");
 	background-size: cover;
@@ -96,6 +118,10 @@ img {
  	display: inline-block;
  	font-size: 25px;
  	font-weight: bold;
+}
+
+#phone_headline {
+	display: none;
 }
 
 #phone_header {
@@ -288,7 +314,25 @@ form {
 	height: 50px;
 	margin-bottom: 20px;
 }
-
+#partner {
+	text-align: center;
+	padding: 70px 20% 30px;
+	min-height: 100vh;
+	font-size: 18px;
+	background-image: url("images/handshake.jpg");
+	background-size: cover;
+}
+#partner p {
+	font-size: 18px;
+}
+#contact_button {
+	background-color: red;
+	color: white;
+	padding: 5px;
+	font-weight: bold;
+	border-radius: 5px;
+	font-size: 16px;
+}
 #contact {
 	padding: 70px 0 0;
 }
@@ -312,15 +356,16 @@ form {
 }
 
 .col1 {
-	width: 22%;
+	width: 32%;
 	float: left;
 	text-align: left;
 }
 
 .col2 {
-	width: 48%;
+	width: 38%;
 	display: inline-block;
 	padding-top: 20px;
+	/*text-align: center;*/
 }
 
 .col3 {
@@ -338,9 +383,15 @@ form {
 	#headline {
 		display: none;
 	}
+	#phone_headline {
+		display: inline-block;
+		margin: -5px 0px 0px 5px;
+		font-weight: bold;
+	}
 	#phone_header {
-		margin-left: 3%;
+		margin-left: 5%;
 		margin-top: 20px;
+		font-size: 14px;
 	}
 	nav a {
 		font-size: 12px;
@@ -367,7 +418,7 @@ form {
 	#get_quote a{
 		font-size: 16px;
 	}	
-	#about, #testimonials, #quote, #movingtips, #fleet {
+	#about, #testimonials, #quote, #movingtips, #fleet, #partner {
 		padding-top: 100px;
 	}
 	#about {
