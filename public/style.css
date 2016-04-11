@@ -39,7 +39,7 @@ nav li, .dropbtn {
     color: white;
 }
 
-nav li:hover {
+nav li:hover, .dropbtn:hover {
     transform: scale(1.1);
     transition: transform 0.2s ease-in;
 }
@@ -390,8 +390,9 @@ form {
 	}
 	#phone_header {
 		margin-left: 5%;
-		margin-top: 20px;
+		/*margin-top: 20px;*/
 		font-size: 14px;
+		/*display: none;*/
 	}
 	nav a {
 		font-size: 12px;
