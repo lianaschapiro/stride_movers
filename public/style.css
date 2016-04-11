@@ -389,10 +389,10 @@ form {
 		font-weight: bold;
 	}
 	#phone_header {
-		margin-left: 5%;
+		/*margin-left: 5%;*/
 		/*margin-top: 20px;*/
-		font-size: 14px;
-		/*display: none;*/
+		/*font-size: 14px;*/
+		display: none;
 	}
 	nav a {
 		font-size: 12px;
