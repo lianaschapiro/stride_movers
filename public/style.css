@@ -322,6 +322,10 @@ form {
 	width: 10px;
 }
 
+form button a {
+	color: white;
+}
+
 input[type=submit] {
 	border-radius: 5px;
 	background-color: lightblue;
