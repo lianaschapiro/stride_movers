@@ -124,7 +124,7 @@ img {
 	display: none;
 }
 
-#phone_header {
+#call_header {
 	text-align: center;
 	margin-left: 15%;
 }
@@ -309,6 +309,22 @@ form {
 	margin-bottom: 20px;
 }
 
+#quote input.short_box {
+	width: 100px;
+}
+
+#quote input[type=checkbox] {
+	width: 10px;
+}
+
+input[type=submit] {
+	border-radius: 5px;
+	background-color: lightblue;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 5px;
+}
+
 #quote textarea {
 	width: 310px;
 	height: 50px;
@@ -388,7 +404,7 @@ form {
 		margin: -5px 0px 0px 5px;
 		font-weight: bold;
 	}
-	#phone_header {
+	#call_header {
 		/*margin-left: 5%;*/
 		/*margin-top: 20px;*/
 		/*font-size: 14px;*/
@@ -461,7 +477,7 @@ form {
 }
 
 @media all and (max-width: 570px) {
-	#phone_header {
+	#call_header {
 		display: none;
 	}
 	#about, #movingtips {

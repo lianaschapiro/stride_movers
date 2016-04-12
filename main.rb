@@ -10,6 +10,10 @@ get '/' do
   erb :home
 end
 
+get '/customer_agreement' do
+  erb :agreement
+end
+
 post '/email' do 
   # if ValidateEmail.valid?(params[:mail])
     client = SendGrid::Client.new(api_key: ENV['SENDGRID_API_KEY'])
@@ -24,8 +28,11 @@ post '/email' do
       				<b> Secondary Phone: </b> #{params[:phone2]}<br><br>
       				<b> How did you hear about us: </b> #{params[:refer]}<br><br>
       				<b> Date 1: </b> #{params[:date1]}<br><br>
+              <b> Time 1: </b> #{params[:time1]}<br><br>
       				<b> Date 2: </b> #{params[:date2]}<br><br>
+              <b> Time 2: </b> #{params[:time2]}<br><br>
       				<b> Date 3: </b> #{params[:date3]}<br><br>
+              <b> Time 3: </b> #{params[:time3]}<br><br>
       				<b> Date details: </b> #{params[:datedetails]}<br><br>
       				<b> Starting address: </b> #{params[:starting]}<br><br>
       				<b> Stairs @ start: </b> #{params[:stairs_start]}<br><br>
@@ -43,7 +50,8 @@ post '/email' do
       				<b> Large boxes: </b> #{params[:largebox]}<br><br>
       				<b> Wardrobe boxes: </b> #{params[:wardrobebox]}<br><br>
       				<b> Other items: </b> #{params[:other_items]}<br><br>
-      				<b> Other info: </b> #{params[:other]}
+      				<b> Other info: </b> #{params[:other]}<br><br>
+              <b> Agree to customer agreement?: </b> #{params[:customer_agreement]}
       				</style>"
     end
   if client.send(email)
