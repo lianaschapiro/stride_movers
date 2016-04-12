@@ -12,6 +12,11 @@ a {
 	text-decoration: none;
 }
 
+.flash {
+	background-color: red;
+	z-index: 100;
+}
+
 nav {
 	background-color: black;
 	color: #e0e0e0;

@@ -1,6 +1,6 @@
 require 'sinatra'
 require 'sendgrid-ruby'
-# require 'sinatra/flash'
+require 'sinatra/flash'
 # require 'valid_email'
 # require 'valid_email/validate_email'
 # set :port, 9494
@@ -15,7 +15,6 @@ get '/customer_agreement' do
 end
 
 post '/email' do 
-  # if ValidateEmail.valid?(params[:mail])
     client = SendGrid::Client.new(api_key: ENV['SENDGRID_API_KEY'])
     email = SendGrid::Mail.new do |m|
       m.to      = 'stridemovers@gmail.com'
@@ -40,7 +39,7 @@ post '/email' do
       				<b> COI needed? </b> #{params[:certificate]}<br><br>
       				<b> Ending address: </b> #{params[:ending]}<br><br>
       				<b> Stairs @ end: </b> #{params[:stairs_end]}<br><br>
-					<b> Details @ end: </b> #{params[:stairdetails_end]}<br><br>  				
+					    <b> Details @ end: </b> #{params[:stairdetails_end]}<br><br>  				
       				<b> Deadlines: </b> #{params[:deadlines]}<br><br>
       				<b> Furniture list: </b> #{params[:furniture]}<br><br>
       				<b> Valuables: </b> #{params[:valuable]}<br><br>
@@ -55,10 +54,10 @@ post '/email' do
       				</style>"
     end
   if client.send(email)
-    # flash[:notice]="You've messaged me, I'll get back to you asap!"
+      flash[:notice]="Thanks for your information, we will get in touch within 24 hours!"
     redirect '/'
   else
-    # flash[:notice]="Please use a properly formatted email address!"
+    # flash[:notice]="Please agree to the customer agreement"
     redirect '/#quote'
   end
 end
