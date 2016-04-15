@@ -249,8 +249,21 @@ img {
 	padding-top: 70px;
 }
 
+.column1 {
+	display: inline-block;
+	width: 55%;
+	padding: 0 0 0 5%;
+}
+
+.column2 {
+	display: inline-block;
+	vertical-align: top;
+	width: 38%;
+	padding: 40px 0px;
+}
+
 #fleet img {
-	width: 60%;
+	width: 100%;
 	margin-bottom: 20px;
 }
 
@@ -500,6 +513,14 @@ input[type=submit] {
 	}
 	#quote h1 {
 		font-size: 18px;
+	}
+	.column1 {
+		width: 90%;
+		padding: 0;
+		margin: 0 auto;
+	}
+	.column2 {
+		width: 90%;
 	}
 	#contact_pic {
 		height: 65vh;
