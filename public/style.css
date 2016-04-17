@@ -178,6 +178,7 @@ img {
 .icons {
 	height: 70px;
 	width: 70px;
+	margin: 5px 1% 0;
 }
 
 #movingtips {
@@ -484,9 +485,15 @@ input[type=submit] {
 		background-color: rgba(255,255,255,0.9);
 	}
 	#about_content {
-		padding-top: 150px;
+		padding-top: 130px;
 		width: 100%;
 		border-radius: 0px;
+	}
+	#about_content_inner {
+	width: 90%;
+	}
+	#about_content_inner h2 {
+		font-size: 18px;
 	}
 	#about p {
 		padding: 0
