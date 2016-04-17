@@ -11,14 +11,11 @@
 	// Dropdown menus on the nav bar
 	$(".dropdown").mouseenter(function(){
 		$(".dropdown-content").slideDown('slow');
-		$(".dropdown-content").delay(3000).slideUp('slow');
+		$(".dropdown-content").delay(2000).slideUp('slow');
 	})
 	$(".dropdown").mouseleave(function(){
 		$(".dropdown-content").slideUp('slow');
 	})
-	// $(".dropbtn").click(function(){
-	//     $(".dropdown-content").delay(4000).slideUp('slow');
-	// })
 	$(".dropdown-content").click(function(){
 	    $(".dropdown-content").slideUp('slow');
 	})
