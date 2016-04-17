@@ -383,6 +383,7 @@ input[type=submit] {
 	width: 310px;
 	height: 50px;
 	margin-bottom: 20px;
+	resize: none;
 }
 #partner {
 	text-align: center;
