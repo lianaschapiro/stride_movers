@@ -358,16 +358,16 @@ form {
 	background-color: white;
 }
 
-#quote input, #quote select {
+input, select {
 	width: 200px;
 	margin-bottom: 20px;
 }
 
-#quote input.short_box {
+input.short_box {
 	width: 100px;
 }
 
-#quote input[type=checkbox] {
+input[type=checkbox] {
 	width: 10px;
 }
 
@@ -383,7 +383,7 @@ input[type=submit] {
 	padding: 5px;
 }
 
-#quote textarea {
+textarea {
 	width: 310px;
 	height: 50px;
 	margin-bottom: 20px;
@@ -391,7 +391,7 @@ input[type=submit] {
 }
 #partner {
 	text-align: center;
-	padding: 70px 20% 30px;
+	padding: 70px 5% 30px;
 	min-height: 100vh;
 	font-size: 18px;
 	background-image: url("images/handshake.jpg");
@@ -400,6 +400,14 @@ input[type=submit] {
 #partner p {
 	font-size: 18px;
 }
+
+#refer_form {
+	padding: 10px 0px;
+	margin: 0 auto;
+	border-radius: 10px;
+	font-size: 16px;
+}
+
 #contact_button {
 	background-color: red;
 	color: white;

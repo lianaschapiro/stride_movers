@@ -291,7 +291,7 @@
 	          	<br>
 	          <label for="assemble">List things that may require dis-assembly/re-assembly</label>
 	         	<br>
-	          <textarea id="article-input" type="text" name="assemble"></textarea>
+	          <textarea type="text" name="assemble"></textarea>
 	          	<br>
 	          <label for="smallbox">Number of small boxes</label>
 	          	<br>
@@ -311,7 +311,7 @@
 	          	<br>
 	          <label for="other_items">Other items</label>
 	          	<br>
-		      <textarea id="article-input" type="text" name="other_items"></textarea>
+		      <textarea type="text" name="other_items"></textarea>
 		      	<br>
 		      <label for="other">Other information</label>
 	          	<br>
@@ -328,14 +328,14 @@
         <h4>USDOT NUMBER: 2872099</h4>
 	</div></div>
 	<div id="partner">
-		<h1>Partner With Us</h1>
-			<br>
+		<div class="column1">
+			<h1>Partner With Us</h1>
 			<h3>Do you know someone who is moving?</h3>
 				<p>
-				<b>Refer your friends to Stride and get a 5 - 10%* referral fee.</b> It's that easy! If you know someone who needs a moving company, please provide us with their name, email address, and phone number. You can not claim a commission for a move after it is completed. When they contact us to book the move, we will send you a confirmation email. If they decide to move with our moving company. We will give you a commission from their move and we will give the person you referred to us a Referral Discount.
+				<b>Refer your friends to Stride and get a 5 - 10%* referral fee.</b> It's that easy! If you know someone who needs a moving company, please fill out our referral form.  When they contact us to book the move, we will send you a confirmation email. If they decide to move with our moving company. We will give you a commission from their move and we will give the person you referred to us a Referral Discount. You can not claim a commission for a move after it is completed.
 			    </p>
 				<p>
-				We offer a 7% commission on local moves (moves taking place within or around New York). After the first five referrals, local commission increases to 10%. Commission on long distance moves (moves taking place outside of the Tri-state area) is always 5%.
+				We offer a 7% commission on local moves (within or around NYC). After the first 5 referrals, local commission increases to 10%. Commission on long distance moves (outside of the Tri-state area) is always 5%.
 				</p>
 				<p>
 				We will contact you again on their move date or the next available business date letting you know how much your commission will be. We will send you a copy of their receipt along with your check. If you have any questions about our referral program, please email us at info@stridemovers.com.
@@ -345,6 +345,44 @@
 				<p>
 				If you are a real estate agency or agent, <a href="#contact"><button id="contact_button">contact us</button></a> to become one of our official partners. All official partners get referral fees as well as advertising on our website.
 				</p>
+			</div>
+			<div class="column2">
+				<form id="refer_form" action="/refer" method="POST">
+				  <label for="name">Your Name</label>
+				  	<br>
+		          <input type="text" name="name">
+		          	<br>
+		          <label for="email">Your Email</label>
+		          	<br>
+		          <input type="email" name="mail">
+		         	 <br>
+		          <label for="phone">Your Phone Number</label>
+		          	<br>
+		          <input type="text" name="phone">
+		          	<br>
+		           <label for="refer_name">Referral Name</label>
+				  	<br>
+		          <input type="text" name="refer_name">
+		          	<br>
+		          <label for="refer_mail">Referral Email</label>
+		          	<br>
+		          <input type="email" name="refer_mail">
+		         	 <br>
+		          <label for="refer_phone">Referral Phone Number</label>
+		          	<br>
+		          <input type="text" name="refer_phone">
+		          	<br>
+		          <label for="move_date">Potential Move Date</label>
+		          	<br>
+		          <input type="date" name="move_date">
+		          	<br>
+		          <label for="details">Details</label>
+		          	<br>
+		          <textarea type="text" name="details"></textarea>
+		          	<br><br>
+		          <input type=submit>
+				</form>
+			</div>
 	</div>
 	<div id="contact">
 		<div id="contact_pic">

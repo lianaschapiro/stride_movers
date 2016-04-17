@@ -4,7 +4,7 @@ require 'sinatra/flash'
 # require 'valid_email'
 # require 'valid_email/validate_email'
 # set :port, 9494
-# enable :sessions
+enable :sessions
 
 get '/' do 
   erb :home
@@ -59,6 +59,32 @@ post '/email' do
   else
     # flash[:notice]="Please agree to the customer agreement"
     redirect '/#quote'
+  end
+end
+
+post '/refer' do 
+    client = SendGrid::Client.new(api_key: ENV['SENDGRID_API_KEY'])
+    email = SendGrid::Mail.new do |m|
+      m.to      = 'stridemovers@gmail.com'
+      m.from    = params[:mail]
+      m.subject = 'Referral From Stride Movers Website'
+      m.html    = "<style='font-size:16px'>
+              <b> Name: </b> #{params[:name]}<br><br>
+              <b> Email: </b> #{params[:mail]}<br><br>
+              <b> Phone: </b> #{params[:phone]}<br><br>
+              <b> Referral Name: </b> #{params[:refer_name]}<br><br>
+              <b> Referral Email: </b> #{params[:refer_mail]}<br><br>
+              <b> Referral Phone: </b> #{params[:refer_phone]}<br><br>
+              <b> Potential Move Date: </b> #{params[:move_date]}<br><br>
+              <b> Details: </b> #{params[:details]}
+              </style>"
+    end
+  if client.send(email)
+      # flash[:notice]="Thanks for your information, we will get in touch within 24 hours!"
+    redirect '/'
+  else
+    # flash[:notice]="Please agree to the customer agreement"
+    redirect '/#partner'
   end
 end
 
