@@ -58,7 +58,7 @@ post '/email' do
       flash[:notice]="Thanks for your information, we will get in touch within 24 hours!"
     redirect '/'
   else
-    # flash[:notice]="Please agree to the customer agreement"
+    flash[:notice]="Something went wrong, please try again"
     redirect '/#quote'
   end
 end
@@ -81,10 +81,10 @@ post '/refer' do
               </style>"
     end
   if client.send(email)
-      # flash[:notice]="Thanks for your information, we will get in touch within 24 hours!"
+      flash[:notice]="Thanks for your referral, we will contact this person"
     redirect '/'
   else
-    # flash[:notice]="Please agree to the customer agreement"
+    flash[:notice]="Something went wrong, please try again"
     redirect '/#partner'
   end
 end

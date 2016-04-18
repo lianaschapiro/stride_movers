@@ -13,8 +13,17 @@ a {
 }
 
 .flash {
-	background-color: red;
-	z-index: 100;
+	position: fixed;
+    top: 70;
+    height: 70;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    line-height: 70px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    z-index: 10;
 }
 
 nav {
@@ -462,6 +471,9 @@ textarea {
 }
 
 @media all and (max-width: 1200px) {
+	.flash {
+		font-size: 20px;
+	}
 	.col1, .col2, .col3 {
 		width: 33%;
 	}
@@ -569,9 +581,16 @@ textarea {
 	.col3 {
 		margin-top: 20px;
 	}
+	.flash {
+		font-size: 18px;
+	}
 }
 
 @media all and (max-width: 560px) {
+	.flash {
+		font-size: 16px;
+		line-height: 30px;
+	}
 	#call_header {
 		display: none;
 	}

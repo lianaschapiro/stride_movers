@@ -19,4 +19,6 @@
 	$(".dropdown-content").click(function(){
 	    $(".dropdown-content").slideUp('slow');
 	})
+
+	$(".flash").delay(1000).fadeOut(1000);
 // });
