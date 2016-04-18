@@ -48,6 +48,7 @@ post '/email' do
       				<b> Medium boxes: </b> #{params[:mediumbox]}<br><br>
       				<b> Large boxes: </b> #{params[:largebox]}<br><br>
       				<b> Wardrobe boxes: </b> #{params[:wardrobebox]}<br><br>
+              <b> Manpower needs: </b> #{params[:vehicle_type]}<br><br>
       				<b> Other items: </b> #{params[:other_items]}<br><br>
       				<b> Other info: </b> #{params[:other]}<br><br>
               <b> Agree to customer agreement?: </b> #{params[:customer_agreement]}
