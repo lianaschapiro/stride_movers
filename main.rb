@@ -15,7 +15,9 @@ get '/customer_agreement' do
 end
 
 post '/email' do 
-    client = SendGrid::Client.new(api_key: ENV['SENDGRID_API_KEY'])
+  puts params.inspect
+  client = SendGrid::Client.new(api_key: ENV['SENDGRID_API_KEY'])
+  if params[:mail].length > 0
     email = SendGrid::Mail.new do |m|
       m.to      = 'stridemovers@gmail.com'
       m.from    = params[:mail]
@@ -54,17 +56,18 @@ post '/email' do
               <b> Agree to customer agreement?: </b> #{params[:customer_agreement]}
       				</style>"
     end
-  if client.send(email)
-      flash[:notice]="Thanks for your information, we will get in touch within 24 hours!"
-    redirect '/'
-  else
-    flash[:notice]="Something went wrong, please try again"
-    redirect '/#quote'
-  end
+      client.send(email)
+        flash[:notice]="Thanks for your information, we will get in touch within 24 hours!"
+      redirect '/'
+    else
+      flash[:notice]="Something went wrong, please try again"
+      redirect '/#quote'
+    end
 end
 
 post '/refer' do 
     client = SendGrid::Client.new(api_key: ENV['SENDGRID_API_KEY'])
+    if params[:mail].length > 0
     email = SendGrid::Mail.new do |m|
       m.to      = 'stridemovers@gmail.com'
       m.from    = params[:mail]
@@ -80,7 +83,7 @@ post '/refer' do
               <b> Details: </b> #{params[:details]}
               </style>"
     end
-  if client.send(email)
+    client.send(email)
       flash[:notice]="Thanks for your referral, we will contact this person"
     redirect '/'
   else
