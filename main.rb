@@ -36,6 +36,7 @@ post '/email' do
               <b> Time 3: </b> #{params[:time3]}<br><br>
       				<b> Date details: </b> #{params[:datedetails]}<br><br>
       				<b> Starting address: </b> #{params[:starting]}<br><br>
+              <b> Apartment size: </b> #{params[:apt_size]}<br><br>
       				<b> Stairs @ start: </b> #{params[:stairs_start]}<br><br>
       				<b> Details @ start: </b> #{params[:stairdetails_start]}<br><br>
       				<b> COI needed? </b> #{params[:certificate]}<br><br>
