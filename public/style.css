@@ -27,7 +27,7 @@ a {
 }
 
 nav {
-	background-color: black;
+	background-color: #5A5A5A;
 	color: #e0e0e0;
 	position:fixed;
 	top: 0;
@@ -43,14 +43,14 @@ nav ul {
 
 nav a {
 	display: inline-block;
-    color: white;
+    color: #FBAD2B;
     padding: 8px 16px;
     margin: 15px 10px 15px 0px;
 }
 
 nav li, .dropbtn {
     display: inline-block;
-    color: white;
+    color: #FBAD2B;
 }
 
 nav li:hover, .dropbtn:hover {
@@ -65,7 +65,7 @@ nav li:hover, .dropbtn:hover {
     display: none;
     position: absolute;
     text-align: center;
-	background-color: black;
+	background-color: #5A5A5A;
     min-width: 160px;
     margin-left: -50px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -96,7 +96,7 @@ nav li:hover, .dropbtn:hover {
 #get_quote {
 	position: fixed;
 	top: 70px;
-	background-color: red;
+	background-color: #009853;
 	width: 240px;
 	height: 70px;
 	border-radius: 0px 0px 10px 0px;
@@ -133,14 +133,24 @@ img {
  	font-size: 25px;
  	font-weight: bold;
 }
+#headline a {
+ 	color: #FBAD2B;
+}
 
 #phone_headline {
 	display: none;
+}
+#phone_headline {
+	color: #FBAD2B;
 }
 
 #call_header {
 	text-align: center;
 	margin-left: 15%;
+}
+
+#call_header {
+	color: #FBAD2B;
 }
 
 #sale {
@@ -150,12 +160,12 @@ img {
 }
 #sale_inner {
 	padding: 5px;
-	border: 5px solid black;
+	border: 5px solid #5A5A5A;
 	background-color: white;
 	border-radius: 20px;
 }
 #sale_inner a{	
-	color: red;
+	color: #009853;
 }
 
 #about {
@@ -320,7 +330,7 @@ img {
 }
 
 #quote button {
-	background-color: red;
+	background-color: #009853;
 	color: white;
 	padding: 5px;
 	font-weight: bold;
@@ -386,7 +396,7 @@ form button a {
 
 input[type=submit] {
 	border-radius: 5px;
-	background-color: red;
+	background-color: #009853;
 	font-size: 16px;
 	font-weight: bold;
 	padding: 5px;
@@ -423,7 +433,7 @@ textarea {
 }
 
 #contact_button {
-	background-color: red;
+	background-color: #009853;
 	color: white;
 	padding: 5px;
 	font-weight: bold;
@@ -446,9 +456,9 @@ textarea {
 }
 
 #footer {
-	background-color: black;
+	background-color: #5A5A5A;
 	height: 125px;
-	color: white;
+	color: #FBAD2B;
 	font-size: 17px;
 }
 
