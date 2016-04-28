@@ -28,7 +28,6 @@ a {
 
 nav {
 	background-color: #5A5A5A;
-	/*color: #e0e0e0;*/
 	position:fixed;
 	top: 0;
 	width: 100%;
@@ -134,14 +133,14 @@ img {
  	font-weight: bold;
 }
 #headline a {
- 	color: #FBAD2B;
+ 	color: white;
 }
 
 #phone_headline {
 	display: none;
 }
 #phone_headline {
-	color: #FBAD2B;
+	color: white;
 }
 
 #call_header {
@@ -150,7 +149,7 @@ img {
 }
 
 #call_header {
-	color: #FBAD2B;
+	color: white;
 }
 
 #sale {
