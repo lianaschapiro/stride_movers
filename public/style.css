@@ -25,14 +25,38 @@ a {
     background-color: red;
     z-index: 10;
 }
+header {
+	height: 40px;
+	position: fixed;
+	top: 0;
+	background-color: white;
+	width: 100%;
+	color: #009853;
+}
+
+#slogan {
+	margin: 5px 0px 0px 15px;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+	display: inline-block;
+	font-weight: bold;
+}
+
+#call_header {
+	float: right;
+	margin: 5px 15px 0 0;
+	font-size: 20px;
+	font-weight: bold;
+}
 
 nav {
 	background-color: #5A5A5A;
 	position:fixed;
-	top: 0;
+	top: 40;
 	width: 100%;
 	z-index: 10;
-	height: 70px;
+	height: 60px;
 }
 
 nav ul {
@@ -44,7 +68,7 @@ nav a {
 	display: inline-block;
     color: white;
     padding: 8px 16px;
-    margin: 15px 10px 15px 0px;
+    margin: 11px 10px 15px 0px;
 }
 
 nav li, .dropbtn {
@@ -94,10 +118,10 @@ nav li:hover, .dropbtn:hover {
 
 #get_quote {
 	position: fixed;
-	top: 70px;
+	top: 100px;
 	background-color: #009853;
 	width: 240px;
-	height: 70px;
+	height: 80px;
 	border-radius: 0px 0px 10px 0px;
 }
 
@@ -107,7 +131,7 @@ nav li:hover, .dropbtn:hover {
 }
 
 #get_quote h3 {
-	margin-top: 8px;
+	margin-top: 10px;
 }
 
 h1, h2{
@@ -138,17 +162,6 @@ img {
 
 #phone_headline {
 	display: none;
-}
-#phone_headline {
-	color: white;
-}
-
-#call_header {
-	text-align: center;
-	margin-left: 15%;
-}
-
-#call_header {
 	color: white;
 }
 
@@ -176,7 +189,7 @@ img {
 #about_content {
 	width: 100%;
 	min-height: 100%;
-	padding: 90px 0px;
+	padding: 100px 0px;
 	margin: 0 auto;
 	background-color: rgba(255,255,255,0.85);
 	box-shadow: 14px 22px 35px 1px rgba(0,0,0,0.66);
@@ -217,7 +230,7 @@ img {
 
 #movingtips {
 	min-height: 100vh;
-	padding: 70px 0 0;
+	padding: 100px 0 0;
 	background-image: url("images/girl_in_box.jpeg");
 	background-size: cover;
 }
@@ -256,7 +269,7 @@ img {
 
 #testimonials {
 	min-height: 100vh;
-	padding: 70px 0 0;
+	padding: 100px 0 0;
 	background-image: url("images/5.jpg");
 	background-attachment: fixed;
 	background-size: cover;
@@ -300,7 +313,7 @@ img {
 
 
 #fleet {
-	padding-top: 70px;
+	padding-top: 100px;
 }
 
 .column1 {
@@ -323,7 +336,7 @@ img {
 
 #quote {
 	min-height: 40vh;
-	padding: 70px 0 40px;
+	padding: 100px 0 40px;
 	background-color: white;
 	/*overflow: auto;*/
 }
@@ -410,7 +423,7 @@ textarea {
 }
 #partner {
 	text-align: center;
-	padding: 70px 5% 30px;
+	padding: 80px 5% 30px;
 	min-height: 100vh;
 	font-size: 18px;
 	background-image: url("images/handshake.jpg");
@@ -486,8 +499,9 @@ textarea {
 	.col1, .col2, .col3 {
 		width: 33%;
 	}
-	#phone_header {
-		margin-left: 3%;
+	#slogan, #call_header {
+		margin-top: 8px;
+		font-size: 16px;
 	}
 	#headline {
 		display: none;
@@ -497,15 +511,9 @@ textarea {
 		margin: -5px 0px 0px 5px;
 		font-weight: bold;
 	}
-	#call_header {
-		/*margin-left: 5%;*/
-		/*margin-top: 20px;*/
-		/*font-size: 14px;*/
-		display: none;
-	}
 	nav a {
 		font-size: 12px;
-		margin: 20px 0px 15px;
+		margin: 14px 0px 15px;
 		padding: 8px;
 	}
 	.col3 {
@@ -537,7 +545,7 @@ textarea {
 		font-size: 20px;
 	}
 	#testimonials, #quote, #movingtips, #fleet, #partner {
-		padding-top: 100px;
+		padding-top: 120px;
 	}
 	#about {
 		background-image: none;
@@ -600,8 +608,11 @@ textarea {
 		font-size: 16px;
 		line-height: 30px;
 	}
-	#call_header {
+	#slogan {
 		display: none;
+	}
+	#call_header {
+		font-size: 14px;
 	}
 	#about, #movingtips {
 		min-height: none;
