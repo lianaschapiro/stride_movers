@@ -104,10 +104,10 @@ nav li:hover, .dropbtn:hover {
     display: block;
 }
 #big_image_background {
-	background-image: url("images/truck.jpg");
+	background-image: url("images/couple.jpg");
 	background-size: cover;
-	width: 100%;
-	height: 100vh;
+	width: 100vw;
+	height: 82vh;
 }
 
 .main {
@@ -133,8 +133,11 @@ nav li:hover, .dropbtn:hover {
 #get_quote h3 {
 	margin-top: 10px;
 }
+h1 {
+	font-size: 28px;
+}
 
-h1, h2{
+h2{
 	margin: 30px 30px 10px;
 }
 
@@ -166,7 +169,7 @@ img {
 }
 
 #sale {
-	padding: 250px 40px 0px;
+	padding: 250px 0px 0px;
 	width: 25%;
 	text-align: center;
 }
@@ -189,7 +192,7 @@ img {
 #about_content {
 	width: 100%;
 	min-height: 100%;
-	padding: 100px 0px;
+	padding: 0px 0px;
 	margin: 0 auto;
 	background-color: rgba(255,255,255,0.85);
 	box-shadow: 14px 22px 35px 1px rgba(0,0,0,0.66);
@@ -201,7 +204,7 @@ img {
 	text-align: left;
 }
 #about_content_inner h1 {
-	font-size: 40px;
+	/*font-size: 28px;*/
 	margin: 20px 0;
 	text-align: center;
 }
@@ -227,12 +230,18 @@ img {
 	width: 70px;
 	margin: 5px 1% 0;
 }
+#movingtips_header {
+	background-image: url("images/7.jpg");
+	background-size: cover;
+	width: 100vw;
+	height: 82vh;
+}
 
 #movingtips {
 	min-height: 100vh;
-	padding: 100px 0 0;
-	background-image: url("images/girl_in_box.jpeg");
-	background-size: cover;
+	padding-top: 20px;
+	/*background-image: url("images/girl_in_box.jpeg");
+	background-size: cover;*/
 }
 
 #movingtips p {
@@ -311,9 +320,15 @@ img {
 	margin-right: 5%;
 }
 
+#fleet_header {
+	background-image: url("images/truck.jpg");
+	background-size: cover;
+	width: 100vw;
+	height: 82vh;
+}
 
 #fleet {
-	padding-top: 100px;
+	padding-top: 20px;
 }
 
 .column1 {
@@ -544,7 +559,10 @@ textarea {
 	#sale h2 {
 		font-size: 20px;
 	}
-	#testimonials, #quote, #movingtips, #fleet, #partner {
+	#movingtips, #fleet {
+		padding-top: 20px;
+	}
+	#quote, #testimonials, #partner {
 		padding-top: 120px;
 	}
 	#about {
@@ -552,7 +570,7 @@ textarea {
 		background-color: rgba(255,255,255,0.9);
 	}
 	#about_content {
-		padding-top: 130px;
+		/*padding-top: 130px;*/
 		width: 100%;
 		border-radius: 0px;
 	}
