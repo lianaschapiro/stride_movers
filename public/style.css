@@ -104,7 +104,7 @@ nav li:hover, .dropbtn:hover {
     display: block;
 }
 #big_image_background {
-	background-image: url("images/couple.jpg");
+	/*background-image: url("images/couple1.jpg");*/
 	background-size: cover;
 	width: 100vw;
 	height: 82vh;
@@ -185,18 +185,17 @@ img {
 
 #about {
 	min-height: 100vh;
-	background-image: url("images/7.jpg");
-	background-size: cover;
+	background-color: white;
 }
 
 #about_content {
 	width: 100%;
 	min-height: 100%;
 	padding: 0px 0px;
-	margin: 0 auto;
+/*	margin: 0 auto;
 	background-color: rgba(255,255,255,0.85);
 	box-shadow: 14px 22px 35px 1px rgba(0,0,0,0.66);
-	overflow: auto;
+	overflow: auto;*/
 }
 #about_content_inner {
 	width: 60%;
@@ -205,7 +204,7 @@ img {
 }
 #about_content_inner h1 {
 	/*font-size: 28px;*/
-	margin: 20px 0;
+	padding: 20px 0 5px;
 	text-align: center;
 }
 #about p {
@@ -275,13 +274,19 @@ img {
 	width: 30%;
 	margin: 10px 1% 25px;
 }
+#testimonials_header {
+	background-image: url("images/5.jpg");
+	background-size: cover;
+	width: 100vw;
+	height: 82vh;
+}
 
 #testimonials {
 	min-height: 100vh;
-	padding: 100px 0 0;
-	background-image: url("images/5.jpg");
-	background-attachment: fixed;
-	background-size: cover;
+	/*padding: 20px 0 0;*/
+/*	background-image: url("images/5.jpg");
+	background-attachment: fixed;*/
+	/*background-size: cover;*/
 	overflow: auto;
 }
 #testimonials h1 {
@@ -290,18 +295,17 @@ img {
 
 #all_testimonials {
 	margin: 0 auto;
-
 }
 
 .individual_testimonial {
 	display: inline-block;
-	width: 45%;
-	margin: 0% 5% 2% 40%;
+	width: 90%;
+	margin: 10 auto;
 	padding: 5px;
 	background-color: rgba(255,255,255,0.9);
 	border-radius: 20px;
 	box-shadow: 14px 22px 35px 1px rgba(0,0,0,0.66);
-	float: right;
+	/*float: right;*/
 }
 
 .individual_testimonial p {
@@ -438,7 +442,7 @@ textarea {
 }
 #partner {
 	text-align: center;
-	padding: 80px 5% 30px;
+	padding: 120px 5% 30px;
 	min-height: 100vh;
 	font-size: 18px;
 	background-image: url("images/handshake.jpg");

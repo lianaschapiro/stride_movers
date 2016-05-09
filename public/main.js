@@ -1,4 +1,10 @@
-// $(document).ready(function(){
+$(document).ready(function(){
+
+	// Background slideshow on landing page
+	setInterval(function() {
+		var random_num = Math.floor((Math.random() * 6) + 1);
+ 		$('#big_image_background').css({"background-image" : "url('images/couple" + random_num + ".jpg')", "transition" : "background-image 1s ease-in"});
+	}, 4000);
 
 	// Open and close the general rates modal
 	function openRatesModal() {
@@ -21,4 +27,5 @@
 	})
 
 	$(".flash").delay(1000).fadeOut(1000);
-// });
+
+});
