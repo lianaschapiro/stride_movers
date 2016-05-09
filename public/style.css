@@ -6,6 +6,7 @@
 
 body {
 	background-color: #e0e0e0;
+	position: absolute;
 }
 
 a {
@@ -32,6 +33,7 @@ header {
 	background-color: white;
 	width: 100%;
 	color: #009853;
+	z-index: 10;
 }
 
 #slogan {
@@ -104,10 +106,10 @@ nav li:hover, .dropbtn:hover {
     display: block;
 }
 #big_image_background {
-	/*background-image: url("images/couple1.jpg");*/
+	margin-top: 80px;
 	background-size: cover;
 	width: 100vw;
-	height: 82vh;
+	height: 70vh;
 }
 
 .main {
