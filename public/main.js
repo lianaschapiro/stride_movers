@@ -25,15 +25,27 @@ $(document).ready(function(){
 	}
 
 	// Dropdown menus on the nav bar
-	$(".dropdown").mouseenter(function(){
-		$(".dropdown-content").slideDown('slow');
-		$(".dropdown-content").delay(2000).slideUp('slow');
+	$("#dropdown_one").mouseenter(function(){
+		$("#dropdown-content_one").slideDown('slow');
+		$("#dropdown-content_one").delay(1500).slideUp('slow');
 	})
-	$(".dropdown").mouseleave(function(){
-		$(".dropdown-content").slideUp('slow');
+	$("#dropdown_one").mouseleave(function(){
+		$("#dropdown-content_one").slideUp('slow');
 	})
-	$(".dropdown-content").click(function(){
-	    $(".dropdown-content").slideUp('slow');
+	$("#dropdown-content_one").click(function(){
+	    $("#dropdown-content_one").slideUp('slow');
+	})
+
+
+	$("#dropdown_two").mouseenter(function(){
+		$("#dropdown-content_two").slideDown('slow');
+		$("#dropdown-content_two").delay(1500).slideUp('slow');
+	})
+	$("#dropdown_two").mouseleave(function(){
+		$("#dropdown-content_two").slideUp('slow');
+	})
+	$("#dropdown-content_two").click(function(){
+	    $("#dropdown-content_two").slideUp('slow');
 	})
 
 	$(".flash").delay(1000).fadeOut(1000);
