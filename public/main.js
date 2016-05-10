@@ -12,7 +12,9 @@ $(document).ready(function(){
     	"images/couple3.jpg", 
     	"images/couple4.jpg", 
     	"images/couple5.jpg",
-    	"images/couple6.jpg"      
+    	"images/couple6.jpg",
+    	"images/couple7.jpg",
+    	"images/couple8.jpg"       
   	], {duration: 3000, fade: 2000, centeredY: false});
 
 

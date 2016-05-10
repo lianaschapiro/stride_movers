@@ -576,16 +576,21 @@ textarea {
 	#about_content_inner {
 		width: 90%;
 		margin: 0 auto;
-		padding-top: 45px;
+		padding-top: 46px;
 	}
 	#about_content h1 {
 		font-size: 20px;
+		padding-top: 12px;
 	}
 	#about_content_inner h2 {
 		font-size: 18px;
 	}
 	#about p {
 		padding: 0
+	}
+	.icons {
+		height: 50px;
+		width: 60px;
 	}
 	#partner {
 		text-align: center;
@@ -623,6 +628,12 @@ textarea {
 	.flash {
 		font-size: 18px;
 	}
+	#get_quote {
+		top: 99px;
+	}
+	#about_content h1 {
+		padding-top: 4px;
+	}
 }
 
 @media all and (max-width: 560px) {
@@ -635,6 +646,10 @@ textarea {
 	}
 	#call_header {
 		font-size: 14px;
+	}
+	
+	#about_content_inner {
+		padding-top: 80px;
 	}
 	#about, #movingtips {
 		min-height: none;
