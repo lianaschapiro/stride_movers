@@ -87,7 +87,7 @@ nav li:hover, .dropbtn:hover {
     display: inline-block;
 }
 
-.dropdown-content {
+#dropdown-content_two {
     display: none;
     position: absolute;
     text-align: center;
@@ -181,21 +181,6 @@ img {
 	color: white;
 }
 
-/*#sale {
-	padding: 250px 0px 0px;
-	width: 25%;
-	text-align: center;
-}
-#sale_inner {
-	padding: 5px;
-	border: 5px solid #5A5A5A;
-	background-color: white;
-	border-radius: 20px;
-}
-#sale_inner a{	
-	color: #009853;
-}*/
-
 #about {
 	min-height: 100vh;
 	background-color: white;
@@ -206,10 +191,8 @@ img {
 	min-height: 100%;
 	margin: 0 auto;
 	text-align: center;
-/*	background-color: rgba(255,255,255,0.85);
-	box-shadow: 14px 22px 35px 1px rgba(0,0,0,0.66);
-	overflow: auto;*/
 }
+
 #about_content_inner {
 	padding-top: 25px;
 	text-align: left;
@@ -238,7 +221,7 @@ img {
 }
 .icons {
 	height: 70px;
-	width: 80px;
+	width: 90px;
 	margin: 5px 1% 0;
 }
 #movingtips_header {
@@ -292,10 +275,6 @@ img {
 
 #testimonials {
 	min-height: 100vh;
-	/*padding: 20px 0 0;*/
-/*	background-image: url("images/5.jpg");
-	background-attachment: fixed;*/
-	/*background-size: cover;*/
 	overflow: auto;
 }
 #testimonials h1 {
@@ -314,7 +293,6 @@ img {
 	background-color: rgba(255,255,255,0.9);
 	border-radius: 20px;
 	box-shadow: 14px 22px 35px 1px rgba(0,0,0,0.66);
-	/*float: right;*/
 }
 
 .individual_testimonial p {
@@ -366,7 +344,6 @@ img {
 	min-height: 40vh;
 	padding: 100px 0 40px;
 	background-color: white;
-	/*overflow: auto;*/
 }
 
 #quote button {
@@ -544,6 +521,15 @@ textarea {
 		margin: 14px 0px 15px;
 		padding: 8px;
 	}
+	#dropdown-content_two {
+	    display: none;
+	    position: absolute;
+	    text-align: center;
+		background-color: #5A5A5A;
+	    min-width: 160px;
+	    margin-left: -100px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	}
 	.col3 {
 		margin-top: 20px;
 	}
@@ -555,7 +541,7 @@ textarea {
 		width: 100%;
 		height: auto;
 		border-radius: 0;
-		padding: 8px 0px 15px 0px;
+		padding: 8px 0px;
 	}
 	#get_quote h3 {
 		margin: 0;
@@ -589,6 +575,11 @@ textarea {
 	}
 	#about_content_inner {
 		width: 90%;
+		margin: 0 auto;
+		padding-top: 45px;
+	}
+	#about_content h1 {
+		font-size: 20px;
 	}
 	#about_content_inner h2 {
 		font-size: 18px;
@@ -610,7 +601,7 @@ textarea {
 	}
 	.individual_testimonial{
 		width: 90%;
-		margin: 4% 5% 2%;
+		margin: -1% 5% 2%;
 	}
 	#rates_modal h2 {
 		font-size:16px;
