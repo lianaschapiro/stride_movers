@@ -29,7 +29,7 @@ $(document).ready(function(){
 	// Dropdown menus on the nav bar
 	$("#dropdown_one").mouseenter(function(){
 		$("#dropdown-content_one").slideDown('slow');
-		$("#dropdown-content_one").delay(1500).slideUp('slow');
+		$("#dropdown-content_one").delay(2500).slideUp('slow');
 	})
 	$("#dropdown_one").mouseleave(function(){
 		$("#dropdown-content_one").slideUp('slow');

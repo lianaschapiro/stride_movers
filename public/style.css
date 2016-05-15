@@ -45,6 +45,10 @@ header {
 	font-weight: bold;
 }
 
+#slogan a {
+	color: #009853;
+}
+
 #call_header {
 	float: right;
 	margin: 5px 15px 0 0;
@@ -102,7 +106,7 @@ nav li:hover, .dropbtn:hover {
     text-align: center;
 	background-color: #5A5A5A;
     min-width: 160px;
-    margin-left: -20px;
+    margin-left: -40px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
