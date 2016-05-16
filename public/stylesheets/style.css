@@ -183,8 +183,7 @@ img {
 .services_col1, .services_col2, .services_col3 {
   width: 33%;
   display: inline-block;
-  vertical-align: top;
-  text-align: center; }
+  vertical-align: top; }
 
 #about_content_inner {
   padding-top: 25px;
