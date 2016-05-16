@@ -8,6 +8,7 @@ GEM
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
+    sass (3.4.22)
     sendgrid-ruby (1.1.6)
       faraday (~> 0.9)
       mimemagic
@@ -25,6 +26,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  sass
   sendgrid-ruby
   sinatra
   sinatra-flash

@@ -1,0 +1,562 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+
+body {
+  background-color: white;
+  position: absolute; }
+
+a {
+  text-decoration: none; }
+
+.flash {
+  position: fixed;
+  top: 70;
+  height: 70;
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  line-height: 70px;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  z-index: 10; }
+
+header {
+  height: 40px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  color: #009853;
+  z-index: 10; }
+
+#slogan {
+  margin: 5px 0px 0px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  display: inline-block;
+  font-weight: bold; }
+  #slogan a {
+    color: #009853; }
+
+#call_header {
+  float: right;
+  margin: 5px 15px 0 0;
+  font-size: 20px;
+  font-weight: bold; }
+
+nav {
+  background-color: #5A5A5A;
+  position: fixed;
+  top: 40;
+  width: 100%;
+  z-index: 10;
+  height: 60px; }
+  nav ul {
+    list-style-type: none;
+    float: right; }
+  nav a {
+    display: inline-block;
+    color: white;
+    padding: 8px 16px;
+    margin: 11px 10px 15px 0px; }
+
+nav li, .dropbtn {
+  display: inline-block;
+  color: white; }
+
+nav li:hover, .dropbtn:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in; }
+
+.dropdown {
+  display: inline-block; }
+
+#dropdown-content_one {
+  display: none;
+  position: absolute;
+  text-align: center;
+  background-color: #5A5A5A;
+  min-width: 160px;
+  margin-left: -40px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+
+#dropdown-content_two {
+  display: none;
+  position: absolute;
+  text-align: center;
+  background-color: #5A5A5A;
+  min-width: 160px;
+  margin-left: -50px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+
+.dropdown-content a {
+  color: white;
+  padding: 8px 16px;
+  margin: 8px;
+  display: block; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+#big_image_background {
+  margin-top: 80px;
+  background-size: cover;
+  width: 100vw;
+  height: 65vh; }
+
+.main {
+  width: 100%;
+  text-align: center;
+  margin: 0px auto; }
+
+#get_quote {
+  position: fixed;
+  top: 100px;
+  background-color: #009853;
+  width: 240px;
+  height: 80px;
+  border-radius: 0px 0px 10px 0px;
+  z-index: 10; }
+  #get_quote a {
+    color: white;
+    font-size: 20px; }
+  #get_quote h3 {
+    margin-top: 10px; }
+
+h1 {
+  font-size: 28px; }
+
+h2 {
+  margin: 30px 30px 10px; }
+
+p, h3 {
+  margin: 15px; }
+
+li {
+  list-style-type: none; }
+
+img {
+  width: 30%;
+  margin: 25px 1% 0px; }
+
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px 0 0 5px; }
+
+#headline {
+  display: inline-block;
+  font-size: 18px; }
+  #headline a {
+    color: white; }
+
+#phone_headline {
+  display: none;
+  color: white; }
+
+#about {
+  min-height: 100vh;
+  background-color: white; }
+  #about p {
+    font-size: 18px;
+    margin-top: 5px; }
+
+#about_content {
+  width: 60%;
+  min-height: 100%;
+  margin: 0 auto;
+  text-align: center; }
+  #about_content h1 {
+    font-size: 26px;
+    padding: 20px 0 0;
+    text-align: center; }
+
+#services {
+  margin-top: 40px;
+  background-size: cover;
+  width: 100vw;
+  height: 65vh; }
+
+#about_content_inner {
+  padding-top: 25px;
+  text-align: left;
+  min-height: 100vh; }
+
+.check {
+  height: 50px;
+  width: 50px;
+  margin: 0; }
+
+.icons {
+  height: 70px;
+  width: 90px;
+  margin: 5px 1% 0; }
+
+#movingtips_header {
+  background-image: url("/images/7.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 82vh; }
+
+#movingtips {
+  min-height: 100vh;
+  padding-top: 20px; }
+  #movingtips p {
+    font-size: 18px;
+    margin-top: 5px; }
+  #movingtips a {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none; }
+  #movingtips img {
+    height: 20px;
+    width: 100px;
+    margin: 0; }
+  #movingtips button {
+    margin: 15px 10px 25px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 14px 22px 35px 1px rgba(0, 0, 0, 0.66); }
+  #movingtips iframe {
+    width: 30%;
+    margin: 10px 1% 25px; }
+
+#testimonials_header {
+  background-image: url("/images/5.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 82vh; }
+
+#testimonials {
+  min-height: 100vh;
+  overflow: auto; }
+  #testimonials h1 {
+    margin-top: 15px; }
+
+#all_testimonials {
+  margin: 0 auto; }
+
+.individual_testimonial {
+  display: inline-block;
+  width: 90%;
+  margin: 0 auto 10px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 14px 22px 35px 1px rgba(0, 0, 0, 0.66); }
+  .individual_testimonial p {
+    text-align: justify; }
+  .individual_testimonial img {
+    height: 40px;
+    width: 80px;
+    margin: 0; }
+
+.right {
+  float: right;
+  margin-left: 40%;
+  margin-right: 5%; }
+
+#fleet_header {
+  background-image: url("/images/truck.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 82vh; }
+
+#fleet {
+  padding-top: 20px; }
+  #fleet img {
+    width: 100%;
+    margin-bottom: 20px; }
+
+.column1 {
+  display: inline-block;
+  width: 55%;
+  padding: 0 0 0 5%; }
+
+.column2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 38%;
+  padding: 40px 0px; }
+
+#quote {
+  min-height: 40vh;
+  padding: 100px 0 40px;
+  background-color: white; }
+  #quote button {
+    background-color: #009853;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px; }
+
+form {
+  background-color: white; }
+  form button a {
+    color: white; }
+
+input, select {
+  width: 200px;
+  margin-bottom: 20px; }
+
+input.short_box {
+  width: 100px; }
+
+input[type=checkbox] {
+  width: 10px; }
+
+input[type=submit] {
+  border-radius: 5px;
+  background-color: #009853;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+  color: white; }
+
+textarea {
+  width: 310px;
+  height: 50px;
+  margin-bottom: 20px;
+  resize: none; }
+
+#partner {
+  text-align: center;
+  padding: 120px 5% 30px;
+  min-height: 100vh;
+  font-size: 18px;
+  background-image: url("/images/handshake.jpg");
+  background-size: cover; }
+  #partner p {
+    font-size: 18px; }
+
+#refer_form {
+  padding: 10px 0px;
+  margin: 0 auto;
+  border-radius: 10px;
+  font-size: 16px; }
+  #refer_form textarea {
+    width: 200px; }
+
+#contact_button {
+  background-color: #009853;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 16px; }
+
+#contact {
+  padding: 70px 0 0; }
+
+.social_icons {
+  height: 60px;
+  width: 80px; }
+
+#contact_pic {
+  height: 65vh;
+  background-image: url("/images/contact.jpg");
+  background-size: cover; }
+
+#footer {
+  background-color: #5A5A5A;
+  height: 125px;
+  color: white;
+  font-size: 17px; }
+
+.col1 {
+  width: 32%;
+  float: left;
+  text-align: left; }
+
+.col2 {
+  width: 38%;
+  display: inline-block;
+  padding-top: 20px;
+  /*text-align: center;*/ }
+
+.col3 {
+  width: 30%;
+  float: right; }
+
+@media all and (max-width: 1200px) {
+  .flash {
+    font-size: 20px; }
+
+  .col1, .col2, .col3 {
+    width: 33%; }
+
+  #slogan, #call_header {
+    margin-top: 8px;
+    font-size: 16px; }
+
+  #headline {
+    display: none; }
+
+  #phone_headline {
+    display: inline-block;
+    margin: -5px 0px 0px 5px;
+    font-weight: bold; }
+
+  nav a {
+    font-size: 12px;
+    margin: 14px 0px 15px;
+    padding: 8px; }
+
+  #dropdown-content_two {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: #5A5A5A;
+    min-width: 160px;
+    margin-left: -100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+
+  .col3 {
+    margin-top: 20px; }
+
+  .social_icons {
+    height: 30px;
+    width: 40px; }
+
+  #get_quote {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    padding: 8px 0px; }
+
+  #get_quote h3 {
+    margin: 0;
+    display: inline-block; }
+
+  #get_quote a {
+    font-size: 16px; }
+
+  #sale {
+    padding: 130px 30px 0px;
+    margin: 0 auto;
+    width: 55%; }
+    #sale h2 {
+      font-size: 20px; }
+
+  #movingtips, #fleet {
+    padding-top: 20px; }
+
+  #quote, #partner {
+    padding-top: 150px; }
+
+  #about {
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.9); }
+    #about p {
+      padding: 0; }
+
+  #about_content {
+    width: 100%;
+    border-radius: 0px; }
+    #about_content h1 {
+      font-size: 20px;
+      padding-top: 12px; }
+
+  #about_content_inner {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 46px; }
+    #about_content_inner h2 {
+      font-size: 18px; }
+
+  .icons {
+    height: 50px;
+    width: 60px; }
+
+  #partner {
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px h3;
+      padding-left-margin-top: 0; }
+
+  #movingtips iframe {
+    width: 90%;
+    margin: 15px 5%; }
+
+  .individual_testimonial {
+    width: 90%;
+    margin: -1% 5% 2%; }
+
+  #rates_modal h2 {
+    font-size: 16px; }
+
+  #contact {
+    padding-top: 0; }
+
+  #contact_pic {
+    height: 42vh; }
+
+  #footer p {
+    font-size: 14px; } }
+@media all and (max-width: 667px) {
+  .col3 {
+    margin-top: 20px; }
+
+  .flash {
+    font-size: 18px; }
+
+  #get_quote {
+    top: 99px; }
+
+  #about_content h1 {
+    padding-top: 4px; } }
+@media all and (max-width: 560px) {
+  .flash {
+    font-size: 16px;
+    line-height: 30px; }
+
+  #slogan {
+    display: none; }
+
+  #call_header {
+    font-size: 14px; }
+
+  #about_content_inner {
+    padding-top: 80px; }
+
+  #about, #movingtips {
+    min-height: none;
+    background-image: none; }
+
+  nav a {
+    font-size: 10px;
+    padding-right: 2px;
+    padding-left: 2px; }
+
+  #quote h1 {
+    font-size: 18px; }
+
+  #sale {
+    padding: 175px 40px 0px;
+    width: 60%; }
+
+  .column1 {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto; }
+
+  .column2 {
+    width: 90%; }
+
+  #contact_pic {
+    height: 65vh; }
+
+  #footer p {
+    font-size: 9px; }
+
+  .col3 {
+    margin-top: 0px; } }
+
+/*# sourceMappingURL=style.css.map */

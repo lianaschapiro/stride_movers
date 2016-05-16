@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'sinatra'
 # gem 'mail'
+gem 'sass'
 gem 'sendgrid-ruby'
 gem 'sinatra-flash'
 # gem 'valid_email'
