@@ -136,7 +136,7 @@ nav li:hover, .dropbtn:hover {
 	width: 240px;
 	height: 80px;
 	border-radius: 0px 0px 10px 0px;
-	z-index: 10;
+	z-index: 1;
 	a {
 		color: white;
 		font-size: 20px;
@@ -214,13 +214,11 @@ img {
 	width: 33%;
 	display: inline-block;
 	vertical-align: top;
-	// text-align: center;
 }
 
 #about_content_inner {
 	padding-top: 25px;
 	text-align: left;
-	// min-height: 100vh;
 	text-align: center;
 }
 
@@ -236,7 +234,6 @@ img {
 	margin: 5px 1% 0;
 }
 #movingtips_header {
-	// background-image: url("/images/7.jpg");
 	background-size: cover;
 	width: 100vw;
 	height: 82vh;
@@ -273,7 +270,6 @@ img {
 	}
 }
 #testimonials_header {
-	// background-image: url("/images/5.jpg");
 	background-size: cover;
 	width: 100vw;
 	height: 82vh;
@@ -488,7 +484,6 @@ textarea {
 	width: 38%;
 	display: inline-block;
 	padding-top: 20px;
-	/*text-align: center;*/
 }
 
 .col3 {
@@ -520,7 +515,11 @@ textarea {
 		margin: 14px 0px 15px;
 		padding: 8px;
 	}
+	#dropdown-content_one {
+		margin-left: -40px;
+	}
 	#dropdown-content_two {
+		z-index: 1000;
 	    display: none;
 	    position: absolute;
 	    text-align: center;

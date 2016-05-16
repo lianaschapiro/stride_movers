@@ -120,7 +120,7 @@ nav li:hover, .dropbtn:hover {
   width: 240px;
   height: 80px;
   border-radius: 0px 0px 10px 0px;
-  z-index: 10; }
+  z-index: 1; }
   #get_quote a {
     color: white;
     font-size: 20px; }
@@ -380,8 +380,7 @@ textarea {
 .col2 {
   width: 38%;
   display: inline-block;
-  padding-top: 20px;
-  /*text-align: center;*/ }
+  padding-top: 20px; }
 
 .col3 {
   width: 30%;
@@ -411,7 +410,11 @@ textarea {
     margin: 14px 0px 15px;
     padding: 8px; }
 
+  #dropdown-content_one {
+    margin-left: -40px; }
+
   #dropdown-content_two {
+    z-index: 1000;
     display: none;
     position: absolute;
     text-align: center;
