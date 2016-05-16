@@ -202,7 +202,6 @@ img {
 	h1 {
 		font-size: 26px;
 		padding: 20px 0 0;
-		text-align: center;
 	}
 }
 #services {
@@ -211,10 +210,18 @@ img {
 	width: 100vw;
 	height: 65vh;
 }
+.services_col1, .services_col2, .services_col3 {
+	width: 33%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+
 #about_content_inner {
 	padding-top: 25px;
 	text-align: left;
 	min-height: 100vh;
+	text-align: center;
 }
 
 .check {
