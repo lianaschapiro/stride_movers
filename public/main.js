@@ -4,7 +4,7 @@ $(document).ready(function(){
 	$("#big_image_background").backstretch([
     	"images/couple1.jpg",
     	"images/couple2.jpg",
-    	"images/couple3.jpg", 
+    	// "images/couple3.jpg", 
     	"images/couple4.jpg"     
   	], {duration: 3000, fade: 2000, centeredY: false});
 
