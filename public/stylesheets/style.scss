@@ -214,6 +214,9 @@ img {
 	width: 24%;
 	display: inline-block;
 	vertical-align: top;
+	h3 {
+		margin-top: 10px;
+	}
 }
 
 #about_content_inner {
@@ -223,8 +226,8 @@ img {
 }
 
 .check {
-	height: 50px;
-	width: 50px;
+	height: 40px;
+	width: 40px;
 	margin: 0;
 }
 
