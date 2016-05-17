@@ -210,8 +210,8 @@ img {
 	width: 100vw;
 	height: 65vh;
 }
-.services_col1, .services_col2, .services_col3 {
-	width: 33%;
+.services_col {
+	width: 24%;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -495,7 +495,7 @@ textarea {
 	.flash {
 		font-size: 20px;
 	}
-	.services_col1, .services_col2, .services_col3 {
+	.services_col {
 		width: 95%;
 	}
 	.col1, .col2, .col3 {
