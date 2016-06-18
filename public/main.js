@@ -4,34 +4,42 @@ $(document).ready(function(){
 	$("#big_image_background").backstretch([
     	"images/couple1.jpg",
     	"images/couple2.jpg",
-    	// "images/couple3.jpg", 
-    	"images/couple4.jpg"     
+    	// "images/couple3.jpg",
+    	"images/couple4.jpg",
+      "images/couple5.jpg",
+      "images/couple6.jpg",
+      "images/couple7.jpg",
+      "images/couple8.jpg"
   	], {duration: 3000, fade: 2000, centeredY: false});
 
 	//Background slideshow on "services" page
-	$("#services").backstretch([ 
-    	"images/couple5.jpg",
-    	"images/couple6.jpg",
-    	"images/couple7.jpg", 
-    	"images/couple8.jpg"     
-  	], {duration: 3000, fade: 2000, centeredY: false});
+	// $("#services").backstretch([
+ //    	"images/couple5.jpg",
+ //    	"images/couple6.jpg",
+ //    	"images/couple7.jpg",
+ //    	"images/couple8.jpg"
+ //  	], {duration: 3000, fade: 2000, centeredY: false});
 
 	//Background slideshow on "moving tips" page
-	$("#movingtips_header").backstretch([ 
-    	"images/5.jpg",
+	$("#movingtips_header").backstretch([
+    	"images/1.jpg",
+      "images/2.jpg",
+      "images/3.jpg",
+      "images/4.jpg",
+      "images/5.jpg",
     	"images/6.jpg",
-    	"images/7.jpg", 
-    	"images/8.jpg"     
+    	"images/7.jpg",
+    	"images/8.jpg"
   	], {duration: 3000, fade: 2000, centeredY: false});
 
   	//Background slideshow on "testimonials" page
-	$("#testimonials_header").backstretch([ 
-    	"images/1.jpg",
-    	"images/2.jpg",
-    	"images/3.jpg", 
-    	"images/4.jpg"     
-  	], {duration: 3000, fade: 2000, centeredY: false});
-	
+	// $("#testimonials_header").backstretch([
+ //    	"images/1.jpg",
+ //    	"images/2.jpg",
+ //    	"images/3.jpg",
+ //    	"images/4.jpg"
+ //  	], {duration: 3000, fade: 2000, centeredY: false});
+
 	// Dropdown menus on the nav bar
 	$("#dropdown_one").mouseenter(function(){
 		$("#dropdown-content_one").slideDown('slow');
