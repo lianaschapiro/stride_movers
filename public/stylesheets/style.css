@@ -5,7 +5,8 @@
 
 body {
   background-color: white;
-  position: absolute; }
+  position: absolute;
+  width: 100%; }
 
 a {
   text-decoration: none; }
@@ -103,7 +104,7 @@ nav li:hover, .dropbtn:hover {
   display: block; }
 
 #big_image_background {
-  margin-top: 80px;
+  margin-top: 70px;
   background-size: cover;
   width: 100vw;
   height: 65vh; }
@@ -166,19 +167,21 @@ img {
     margin-top: 5px; }
 
 #about_content {
-  width: 80%;
+  width: 100%;
   min-height: 100%;
   margin: 0 auto;
   text-align: center; }
   #about_content h1 {
     font-size: 26px;
     padding: 20px 0 0; }
+  #about_content p {
+    margin-top: 15px; }
 
 #services {
   margin-top: 40px;
   background-size: cover;
   width: 100vw;
-  height: 65vh; }
+  height: 0; }
 
 .services_col {
   width: 24%;
@@ -188,7 +191,7 @@ img {
     margin-top: 10px; }
 
 #about_content_inner {
-  padding-top: 25px;
+  padding-top: 5px;
   text-align: left;
   text-align: center; }
 
@@ -200,7 +203,7 @@ img {
 .icons {
   height: 70px;
   width: 90px;
-  margin: 5px 2% 0; }
+  margin: 5px 2% 15px; }
 
 #movingtips_header {
   background-size: cover;
@@ -235,11 +238,13 @@ img {
 #testimonials_header {
   background-size: cover;
   width: 100vw;
-  height: 82vh; }
+  height: 0; }
 
 #testimonials {
   min-height: 100vh;
-  overflow: auto; }
+  overflow: auto;
+  padding-top: 100px;
+  background-color: black; }
   #testimonials h1 {
     margin-top: 15px; }
 
@@ -248,10 +253,10 @@ img {
 
 .individual_testimonial {
   display: inline-block;
-  width: 90%;
-  margin: 0 auto 10px;
+  width: 95%;
+  margin: 0 auto 20px;
   padding: 5px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: white;
   border-radius: 20px;
   box-shadow: 14px 22px 35px 1px rgba(0, 0, 0, 0.66); }
   .individual_testimonial p {

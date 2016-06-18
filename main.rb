@@ -6,7 +6,7 @@ require 'sinatra/flash'
 # set :port, 9494
 enable :sessions
 
-get '/' do 
+get '/' do
   erb :home
 end
 
@@ -14,7 +14,7 @@ get '/customer_agreement' do
   erb :agreement
 end
 
-post '/email' do 
+post '/email' do
   puts params.inspect
   client = SendGrid::Client.new(api_key: ENV['SENDGRID_API_KEY'])
   if params[:mail].length > 0
@@ -42,7 +42,7 @@ post '/email' do
       				<b> COI needed? </b> #{params[:certificate]}<br><br>
       				<b> Ending address: </b> #{params[:ending]}<br><br>
       				<b> Stairs @ end: </b> #{params[:stairs_end]}<br><br>
-					    <b> Details @ end: </b> #{params[:stairdetails_end]}<br><br>  				
+					    <b> Details @ end: </b> #{params[:stairdetails_end]}<br><br>
       				<b> Deadlines: </b> #{params[:deadlines]}<br><br>
       				<b> Furniture list: </b> #{params[:furniture]}<br><br>
       				<b> Valuables: </b> #{params[:valuable]}<br><br>
@@ -66,7 +66,7 @@ post '/email' do
     end
 end
 
-post '/refer' do 
+post '/refer' do
     client = SendGrid::Client.new(api_key: ENV['SENDGRID_API_KEY'])
     if params[:mail].length > 0
     email = SendGrid::Mail.new do |m|
@@ -93,6 +93,10 @@ post '/refer' do
   end
 end
 
-get '/resume' do 
+get '/quote' do
+  erb :quote
+end
+
+get '/resume' do
   erb :resume
 end

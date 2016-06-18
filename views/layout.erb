@@ -22,8 +22,38 @@
 		<%= "<span class='flash'>" + flash[:notice] + "</span>"%>
 	<% end %>
 
-	<%= yield %>
+	<header>
+		<li id="slogan"><a href="/">Stride Movers</a></li>
+		<li id="call_header">Call | 917.822.6031 | M-F 7a-7p, Sat/Sun 7a-5p</li>
+	</header>
+	<nav>
+		<li id="headline"><a href="/#services">Finally, A Stress-Free Move!</a></li>
+		<li id="phone_headline"><a href="/#services">Finally,<br>A Stress-Free Move!</a></li>
+		<ul>
+			<div class="dropdown" id="dropdown_one">
+				<a class="dropbtn one" href="/">Our Company</a>
+					<div class="dropdown-content" id="dropdown-content_one">
+						<a href="/">About Us</a>
+						<a href="/#services">Our Services</a>
+						<a href="/#fleet_header">Our Fleet</a>
 
+					</div>
+			</div>
+			<li><a href="/#testimonials">Testimonials</a></li>
+			<li><a href="/#movingtips_header">Moving Tips</a></li>
+			<div class="dropdown" id="dropdown_two">
+				<a class="dropbtn" href="/#contact">Contact</a>
+					<div class="dropdown-content" id="dropdown-content_two">
+						<a href="/#partner">Become a Partner</a>
+					</div>
+			</div>
+		</ul>
+	</nav>
+	<div class="main">
+
+		<%= yield %>
+
+	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 	<script src="main.js"></script>
