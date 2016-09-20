@@ -21,16 +21,16 @@ $(document).ready(function(){
  //  	], {duration: 3000, fade: 2000, centeredY: false});
 
 	//Background slideshow on "moving tips" page
-	$("#movingtips_header").backstretch([
-    	"images/1.jpg",
-      "images/2.jpg",
-      "images/3.jpg",
-      "images/4.jpg",
-      "images/5.jpg",
-    	"images/6.jpg",
-    	"images/7.jpg",
-    	"images/8.jpg"
-  	], {duration: 3000, fade: 2000, centeredY: false});
+	// $("#movingtips_header").backstretch([
+ //    	"images/1.jpg",
+ //      "images/2.jpg",
+ //      "images/3.jpg",
+ //      "images/4.jpg",
+ //      "images/5.jpg",
+ //    	"images/6.jpg",
+ //    	"images/7.jpg",
+ //    	"images/8.jpg"
+ //  	], {duration: 3000, fade: 2000, centeredY: false});
 
   	//Background slideshow on "testimonials" page
 	// $("#testimonials_header").backstretch([
